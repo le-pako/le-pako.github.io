@@ -281,7 +281,11 @@ Error message and password prompt
 
 <li>Start</li>
 
+<li>sticky</li>
+
 <li>stylesheet of topMenu</li>
+
+<li>template/menuitem</li>
 
 <li>Templates/Themes</li>
 
@@ -5557,30 +5561,13 @@ Error message and password prompt
 &lt;/svg&gt;
  </pre>
 </div>
-<div created="20150314130644899" modified="20150315230840373" tags="[[Test menu gauche]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
+<div created="20150314130644899" modified="20150318225031621" tags="[[Test menu gauche]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
 <pre>&lt;!-- Commentaires : 
 
 --&gt;
 &lt;div class=&quot;tidplus-topbar _navbar _navbar-default&quot; &gt;
 &lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/plugins/lepako/tidplus/images/arrow-left}}&lt;/button&gt;&lt;/span&gt;
-&lt;$list filter=&quot;[tag[$:/custom/topmenu]]&quot;&gt;
-&lt;span class=&quot;tidplus-nav&quot;&gt;
-&lt;$button popup=&lt;&lt;qualify &quot;$:/state/popup/tags-auto-complete&quot; &gt;&gt; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; tooltip=&quot;&quot; &gt;
-&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$view&gt;&lt;i class=&quot;caret&quot;/&gt;&lt;/$button&gt;
-
-&lt;div class=&quot;tc-block-dropdown-wrapper&quot;&gt;
-&lt;$reveal state=&lt;&lt;qualify &quot;$:/state/popup/tags-auto-complete&quot;&gt;&gt; type=&quot;nomatch&quot; text=&quot;&quot; default=&quot;&quot;&gt;
-&lt;div class=&quot;tc-block-dropdown&quot;&gt;
-&lt;$list filter=&quot;[&lt;currentTiddler&gt;tagging[]]&quot;&gt;
-&lt;$link &gt;
-&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$view&gt;
-&lt;/$link&gt;
-&lt;/$list&gt;
-&lt;/div&gt;
-&lt;/$reveal&gt;
-&lt;/div&gt;
-&lt;/span&gt;
-&lt;/$list&gt;
+&lt;$list filter=&quot;[tag[$:/custom/topmenu]]&quot; template=&quot;template/menuitem&quot; /&gt;
 &lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/core/images/right-arrow}}&lt;/button&gt;&lt;/span&gt;
 &lt;/div&gt;</pre>
 </div>
@@ -5605,8 +5592,8 @@ Error message and password prompt
 <div modified="20150312230934353" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div modified="20150316231049150" title="$:/state/sidebar">
-<pre>yes</pre>
+<div modified="20150318224556324" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div modified="20150315234746456" title="$:/state/tab--1174433015">
 <pre>$:/core/ui/TiddlerInfo/Listed</pre>
@@ -5656,8 +5643,8 @@ Error message and password prompt
 <div modified="20150308221155298" title="$:/state/toc/A faire-tidExplorer--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150316233402522" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
-<pre>close</pre>
+<div modified="20150318223705457" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
+<pre>open</pre>
 </div>
 <div modified="20150308124621918" title="$:/state/toc/Start-A faire--1317564193">
 <pre>open</pre>
@@ -5671,10 +5658,10 @@ Error message and password prompt
 <div modified="20150316233359742" title="$:/state/toc/Top horizontal Menu-Add bootstrap--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150316233401277" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
-<pre>close</pre>
+<div modified="20150318223707061" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
+<pre>open</pre>
 </div>
-<div list="Start [[A faire]] [[Create a Field Manager]] [[Custom stylesheet]]" title="$:/StoryList">
+<div list="Start $:/plugins/lepako/tidplus/topmenu [[A faire]] [[Create a Field Manager]] [[Custom stylesheet]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20150307122948000" modified="20150316232400632" title="$:/temp/advancedsearch">
@@ -5694,7 +5681,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20150307113657574" modified="20150315230503878" title="$:/temp/NewTagName">
+<div created="20150307113657574" modified="20150318223732096" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20150307112250275" modified="20150316232347152" title="$:/temp/search">
@@ -6078,8 +6065,7 @@ Add a way to manage these default values, what they point to, etc.</pre>
 <pre>Add function to expand (show/hide) text of a tiddler</pre>
 </div>
 <div created="20150315224242758" modified="20150316002522947" tags="[[Top horizontal Menu]]" title="new pictures">
-<pre>
-Done:
+<pre>Done:
 
 *Left arrow: [[$:/plugins/lepako/tidplus/images/arrow-left]] equivalent to core right arrow [[$:/core/images/right-arrow]]
 *Up arrow: [[$:/plugins/lepako/tidplus/images/arrow-up]]</pre>
@@ -6129,6 +6115,9 @@ Type of document
 &lt;/div&gt;
 </pre>
 </div>
+<div created="20150318223722185" modified="20150318223752459" tags="$:/custom/topmenu" title="sticky">
+<pre></pre>
+</div>
 <div created="20150312214814880" modified="20150315233450167" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="stylesheet of topMenu">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
@@ -6169,6 +6158,24 @@ border-right: solid 1px #5778D8;
 border-left: solid 1px #5778D8; 
 }
 &lt;/pre&gt;</pre>
+</div>
+<div created="20150318223918381" modified="20150318225112209" tags="[[Test menu gauche]]" title="template/menuitem">
+<pre>&lt;span class=&quot;tidplus-nav&quot;&gt;
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/topmenu&quot; &gt;&gt; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; tooltip=&quot;&quot; &gt;
+&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$view&gt;&lt;i class=&quot;caret&quot;/&gt;&lt;/$button&gt;
+
+&lt;div class=&quot;tc-block-dropdown-wrapper&quot;&gt;
+&lt;$reveal state=&lt;&lt;qualify &quot;$:/state/topmenu&quot;&gt;&gt; type=&quot;nomatch&quot; text=&quot;&quot; default=&quot;&quot;&gt;
+&lt;div class=&quot;tc-block-dropdown&quot;&gt;
+&lt;$list filter=&quot;[&lt;currentTiddler&gt;tagging[]]&quot;&gt;
+&lt;$link &gt;
+&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$view&gt;
+&lt;/$link&gt;
+&lt;/$list&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+&lt;/div&gt;
+&lt;/span&gt;</pre>
 </div>
 <div created="20150307121343608" modified="20150307122923722" tags="[[A faire]]" title="Templates/Themes">
 <pre>Learn/Create templates and themes</pre>
@@ -6232,7 +6239,7 @@ border-left: solid 1px #5778D8;
 <div created="20150311200101315" modified="20150311200223766" tags="$:/form" title="Timelines">
 <pre>!!!From &lt;$select &gt;&lt;option&gt;2000&lt;/option&gt;&lt;/$select&gt; to  &lt;$select &gt;&lt;option&gt;2000&lt;/option&gt;&lt;/$select&gt;</pre>
 </div>
-<div created="20150311201435140" modified="20150315172050889" tags="[[A faire]] $:/custom/topmenu" title="Toolbox">
+<div created="20150311201435140" modified="20150318223641980" tags="[[A faire]] $:/custom/topmenu sticky" title="Toolbox">
 <pre>&lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt;
 
 &lt;$checkbox tag=&quot;done&quot;&gt;Is it done?&lt;/$checkbox&gt;
