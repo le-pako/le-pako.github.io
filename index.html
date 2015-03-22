@@ -5615,7 +5615,7 @@ emptyValue=&quot;&quot; &gt;
 
 </pre>
 </div>
-<div created="20150319215303668" list="direct_link sticky" modified="20150321193409361" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/list">
+<div created="20150319215303668" list="direct_link sticky" modified="20150322031501778" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/list">
 <pre>{{!!list}}</pre>
 </div>
 <div caption="Top Menu settings" created="20150320104619139" modified="20150320105813549" tags="[[Test menu gauche]] $:/tags/ControlPanel" title="$:/plugins/lepako/tidplus/topmenu/settings">
@@ -5630,29 +5630,34 @@ Order the menu items:
 &lt;i class=&quot;fa fa-chevron-down&quot; /&gt; Item 3 &lt;i class=&quot;fa fa-chevron-up&quot; /&gt;
 </pre>
 </div>
-<div created="20150312214814880" modified="20150319200515059" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
+<div created="20150312214814880" modified="20150322144826560" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 tc-story-river { top:40px;}
 .tc-block-dropdown {margin-top: 0px;}
 
 .tc-topbar {
+top: 0px;
+background-color: &lt;&lt;color page-background&gt;&gt;
 }
 
 .tc-topbar-left {
 left: 0px;
-top: 0px;
-background-color: #F8F8F8;
-border: 1px solid #e7e7e7;
+/*background-color: #F8F8F8; */
+border-bottom: 1px solid  &lt;&lt;color tab-border &gt;&gt; ;
+width: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}};
+
 }
 
 .tidplus-topbar{
 position:relative;
+
 }
 
 .tidplus-nav{
 margin: 0 0px 0 0px;
 float:left;
+
 }
 
 .tidplus-nav a{
@@ -5726,11 +5731,11 @@ font-size: 1.2em;
 <div modified="20150314032115539" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div modified="20150312230934353" title="$:/state/ShowPaletteEditor">
-<pre>no</pre>
-</div>
-<div modified="20150321182442484" title="$:/state/sidebar">
+<div modified="20150322031857479" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
+</div>
+<div modified="20150322144049117" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div modified="20150315234746456" title="$:/state/tab--1174433015">
 <pre>$:/core/ui/TiddlerInfo/Listed</pre>
@@ -5744,8 +5749,8 @@ font-size: 1.2em;
 <div modified="20150321182147355" title="$:/state/tab--1640377399">
 <pre>$:/core/ui/TiddlerInfo/List</pre>
 </div>
-<div modified="20150319224116602" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div modified="20150322031853935" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
 <div modified="20150320105022577" title="$:/state/tab--2040492136">
 <pre>$:/core/ui/TiddlerInfo/Listed</pre>
@@ -5762,8 +5767,8 @@ font-size: 1.2em;
 <div modified="20150321125441963" title="$:/state/tab-159240502">
 <pre>$:/core/ui/TiddlerInfo/List</pre>
 </div>
-<div modified="20150320105559279" title="$:/state/tab-1749438307">
-<pre>$:/plugins/lepako/tidplus/topmenu/settings</pre>
+<div modified="20150322031633717" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div modified="20150309232304863" title="$:/state/tab-1803318191">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
@@ -5792,11 +5797,11 @@ font-size: 1.2em;
 <div modified="20150308221155298" title="$:/state/toc/A faire-tidExplorer--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150320104600751" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
-<pre>open</pre>
+<div modified="20150322130926772" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
+<pre>close</pre>
 </div>
-<div modified="20150321193429082" title="$:/state/toc/Start-A faire--1317564193">
-<pre>open</pre>
+<div modified="20150322144242571" title="$:/state/toc/Start-A faire--1317564193">
+<pre>close</pre>
 </div>
 <div modified="20150319211918341" title="$:/state/toc/Start-Features--1317564193">
 <pre>close</pre>
@@ -5810,7 +5815,7 @@ font-size: 1.2em;
 <div modified="20150321183642537" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
 <pre>open</pre>
 </div>
-<div list="Start button/right" title="$:/StoryList">
+<div list="Start $:/plugins/lepako/tidplus/topmenu/stylesheet" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20150307122948000" modified="20150321193055485" title="$:/temp/advancedsearch">
