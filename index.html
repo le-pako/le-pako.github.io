@@ -5728,14 +5728,8 @@ Configure your top menu bar.
 &lt;$checkbox field=&quot;text&quot; checked=&quot;show&quot; unchecked=&quot;hide&quot; tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/settings/icons&quot; /&gt; Show Icons 
 </pre>
 </div>
-<div caption="Order Items" created="20150330191150310" modified="20150331000029393" tags="$:/plugins/lepako/tidplus/topmenu/settings" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
-<pre>\define addPrefix(var) _$var$
-\define cleanConfigButton(var)
-&lt;$button &gt;
-&lt;$action-deletefield $tiddler=&quot;topmenu/config&quot; $var$ /&gt;
-{{$:/core/images/delete-button}} Refresh configuration : $var$
-&lt;/$button&gt; 
-\end
+<div caption="Order Items" created="20150330191150310" modified="20150331130842699" tags="$:/plugins/lepako/tidplus/topmenu/settings" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
+<pre>\define addConfig(var) $:/config/TopMenu/Visibility/$var$
 
 &lt;$link to=&quot;$:/plugins/lepako/tidplus/topmenu/settings/order&quot; class=&quot;right&quot;&gt;Edit this tiddler &lt;/$link&gt;
 
@@ -5747,7 +5741,7 @@ Order the menu items
 &lt;$list filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]]&quot; variable=&quot;listItem&quot;&gt;
 &lt;tr&gt;&lt;td&gt;&lt;i class=&quot;fa fa-chevron-down&quot; /&gt;&lt;i class=&quot;fa fa-chevron-up&quot; /&gt; &lt;$link to=&lt;&lt;listItem&gt;&gt;&gt;&lt;$view tiddler=&lt;&lt;listItem&gt;&gt; field='title' /&gt;&lt;/$link&gt;&lt;/td&gt;
 &lt;td&gt;
-&lt;$select tiddler=&quot;topmenu/config&quot; field=&lt;&lt;addPrefix $(listItem)$&gt;&gt; default=&quot;Select one&quot;&gt;
+&lt;$select tiddler=&lt;&lt;addConfig $(listItem)$&gt;&gt; field=&quot;text&quot; default=&quot;Select one&quot;&gt;
 &lt;option&gt;Select one&lt;/option&gt;
 &lt;option value=&quot;title&quot;&gt;Title&lt;/option&gt;
 &lt;option value=&quot;text&quot;&gt;Text&lt;/option&gt;
@@ -5757,14 +5751,10 @@ Order the menu items
 &lt;/$list&gt;
 &lt;/table&gt;
 
-&lt;$set name=&quot;configFields&quot; filter=&quot;[fields[topmenu/config]prefix[_]]&quot; &gt;
-
-
-`This button doesn't refresh!!`
-
-&lt;&lt;cleanConfigButton $(configFields)$ &gt;&gt;
-
-&lt;/$set&gt;
+&lt;$button class=&quot;green&quot;&gt;
+&lt;$action-deletetiddler $filter=&quot;[all[]prefix[$:/config/TopMenu/Visibility/]]&quot;  /&gt;
+{{$:/core/images/delete-button}} Delete Configuration Tiddlers
+&lt;/$button&gt; 
 
 ---
 &lt;i class=&quot;fa fa-chevron-down&quot; /&gt; Item 1 &lt;i class=&quot;fa fa-chevron-up&quot; /&gt;
@@ -5821,13 +5811,12 @@ font-size: 1.2em;
 
 &lt;/pre&gt;</pre>
 </div>
-<div created="20150318223918381" modified="20150329115150117" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/template/menuitem">
+<div created="20150318223918381" modified="20150331131848382" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/template/menuitem">
 <pre>\define hasChildren()
 &lt;$button popup=&lt;&lt;qualify &quot;$:/state/topmenu&quot; &gt;&gt; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; tooltip=&quot;&quot; &gt;
-&lt;$list filter=&quot;[[$:/plugins/lepako/tidplus/topmenu/settings/icons]search:text[show]]&quot; variable=&quot;listItem&quot;&gt;
-{{!!icon}}
-&lt;/$list&gt;
-&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$view&gt;&lt;i class=&quot;caret&quot;/&gt;&lt;/$button&gt;
+&lt;$list filter=&quot;[[$:/plugins/lepako/tidplus/topmenu/settings/icons]search:text[show]]&quot; variable=&quot;listItem&quot;&gt;{{!!icon}}&lt;/$list&gt;
+&lt;$view field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$view&gt; {{$:/core/images/down-arrow}}
+&lt;/$button&gt;
 
 &lt;div class=&quot;tc-block-dropdown-wrapper&quot;&gt;
 &lt;$reveal state=&lt;&lt;qualify &quot;$:/state/topmenu&quot;&gt;&gt; type=&quot;nomatch&quot; text=&quot;&quot; default=&quot;&quot;&gt;
@@ -5928,7 +5917,7 @@ font-size: 1.2em;
 <div modified="20150330230811078" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div modified="20150331000035794" title="$:/state/sidebar">
+<div modified="20150331131038058" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div modified="20150330192135823" title="$:/state/tab--1020931767">
@@ -5943,8 +5932,8 @@ font-size: 1.2em;
 <div modified="20150329134244236" title="$:/state/tab--146773019">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div modified="20150331000059968" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div modified="20150331130540420" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div modified="20150324004656696" title="$:/state/tab--1640377399">
 <pre>$:/core/ui/TiddlerInfo/Fields</pre>
@@ -5973,8 +5962,8 @@ font-size: 1.2em;
 <div modified="20150329212722262" title="$:/state/tab-1427503023">
 <pre>$:/core/ui/TiddlerInfo/Fields</pre>
 </div>
-<div modified="20150330194114244" title="$:/state/tab-1486726048">
-<pre>$:/plugins/lepako/tidplus/topmenu/settings/order</pre>
+<div modified="20150331124606322" title="$:/state/tab-1486726048">
+<pre>$:/plugins/lepako/tidplus/topmenu/settings/main</pre>
 </div>
 <div modified="20150321125441963" title="$:/state/tab-159240502">
 <pre>$:/core/ui/TiddlerInfo/List</pre>
@@ -5982,8 +5971,8 @@ font-size: 1.2em;
 <div modified="20150329134306855" title="$:/state/tab-1692304978">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div modified="20150331000109658" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div modified="20150331121359534" title="$:/state/tab-1749438307">
+<pre>$:/plugins/lepako/tidplus/topmenu/settings</pre>
 </div>
 <div modified="20150309232304863" title="$:/state/tab-1803318191">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
@@ -6036,8 +6025,8 @@ font-size: 1.2em;
 <div modified="20150329182448334" title="$:/state/toc/Order a list-test--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150330194022682" title="$:/state/toc/Start-A faire--1317564193">
-<pre>close</pre>
+<div modified="20150331131313436" title="$:/state/toc/Start-A faire--1317564193">
+<pre>open</pre>
 </div>
 <div modified="20150329173234191" title="$:/state/toc/Start-Done--1317564193">
 <pre>close</pre>
@@ -6045,7 +6034,7 @@ font-size: 1.2em;
 <div modified="20150319211918341" title="$:/state/toc/Start-Features--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150330201734636" title="$:/state/toc/Start-Tests--1317564193">
+<div modified="20150331131045625" title="$:/state/toc/Start-Tests--1317564193">
 <pre>close</pre>
 </div>
 <div modified="20150319004222757" title="$:/state/toc/Test menu gauche-Menu1--1317564193">
@@ -6060,14 +6049,14 @@ font-size: 1.2em;
 <div modified="20150329124024005" title="$:/state/toc/Top horizontal Menu-Menu1--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150330190252859" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
-<pre>close</pre>
+<div modified="20150331131318168" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
+<pre>open</pre>
 </div>
-<div list="$:/ControlPanel $:/AdvancedSearch topmenu/config $:/plugins/lepako/tidplus/topmenu/settings/order Start" title="$:/StoryList">
+<div list="$:/AdvancedSearch Start $:/plugins/lepako/tidplus/topmenu/template/menuitem" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20150307122948000" modified="20150331000053059" title="$:/temp/advancedsearch">
-<pre>favi</pre>
+<div created="20150307122948000" modified="20150331130543209" title="$:/temp/advancedsearch">
+<pre>[all[]prefix[$:/config/TopMenu/Visibility/]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -6784,7 +6773,7 @@ Inspiration from :
 * [[$:/core/ui/Buttons/more-tiddler-actions]] (button `more actions` in tiddlers' titlebar)
 * tag manager</pre>
 </div>
-<div created="20150330190231547" modified="20150330234700332" tags="[[Test menu gauche]]" title="topmenu/config">
+<div _direct_link="title" created="20150330190231547" modified="20150331122148208" tags="[[Test menu gauche]]" title="topmenu/config">
 <pre>&lt;table class=&quot;tc-view-field-table&quot;&gt;
 &lt;tbody&gt;
 &lt;$list filter=&quot;[all[current]fields[]sort[title]] -text&quot; template=&quot;$:/core/ui/TiddlerFieldTemplate&quot; variable=&quot;listItem&quot; &gt;
