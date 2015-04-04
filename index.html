@@ -117,6 +117,8 @@ Error message and password prompt
 
 <p>This <a class='tc-tiddlylink-external' href='http://tiddlywiki.com' target='_blank'>TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>_dat</li>
+
 <li>_fields</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
@@ -207,6 +209,8 @@ Error message and password prompt
 
 <li>$:/state/tab--959111941</li>
 
+<li>$:/state/tab-1036691963</li>
+
 <li>$:/state/tab-1250738789</li>
 
 <li>$:/state/tab-1382582779</li>
@@ -247,6 +251,8 @@ Error message and password prompt
 
 <li>$:/state/toc/A faire-New Theme--1317564193</li>
 
+<li>$:/state/toc/A faire-Side Menus--1317564193</li>
+
 <li>$:/state/toc/A faire-Tiddler Types--1317564193</li>
 
 <li>$:/state/toc/A faire-tidExplorer--1317564193</li>
@@ -255,6 +261,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Order a list-test--1317564193</li>
 
+<li>$:/state/toc/Side Menus-Top horizontal Menu--1317564193</li>
+
 <li>$:/state/toc/Start-A faire--1317564193</li>
 
 <li>$:/state/toc/Start-Done--1317564193</li>
@@ -262,6 +270,8 @@ Error message and password prompt
 <li>$:/state/toc/Start-Features--1317564193</li>
 
 <li>$:/state/toc/Start-Tests--1317564193</li>
+
+<li>$:/state/toc/Test menu gauche-$:/plugins/lepako/tidplus/topmenu/settings--1317564193</li>
 
 <li>$:/state/toc/Test menu gauche-Menu1--1317564193</li>
 
@@ -283,6 +293,8 @@ Error message and password prompt
 
 <li>$:/temp/search</li>
 
+<li>$:/temp/topmenu</li>
+
 <li>$:/theme</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
@@ -301,7 +313,15 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
+<li>1-control with taglist</li>
+
 <li>1.Learn to create plugins</li>
+
+<li>2-control with taglist and previous/next item</li>
+
+<li>3-control with temp file</li>
+
+<li>4-control with list-before/list-after</li>
 
 <li>A faire</li>
 
@@ -309,15 +329,15 @@ Error message and password prompt
 
 <li>backup $:/plugins/lepako/tidplus/topmenu</li>
 
+<li>bottom menu</li>
+
 <li>button/left</li>
 
 <li>button/right</li>
 
 <li>button/right - backup</li>
 
-<li>control</li>
-
-<li>control 2</li>
+<li>Config/tiddlers</li>
 
 <li>Country</li>
 
@@ -347,6 +367,10 @@ Error message and password prompt
 
 <li>Field Manager</li>
 
+<li>http://tw5custom.tiddlyspot.com/</li>
+
+<li>http://wills.tiddlyspot.com/</li>
+
 <li>icon-auto</li>
 
 <li>Icons assigner</li>
@@ -358,6 +382,10 @@ Error message and password prompt
 <li>Item 2</li>
 
 <li>Item 3</li>
+
+<li>Item 4</li>
+
+<li>Left/Right Menu</li>
 
 <li>List of Top Menu items</li>
 
@@ -373,7 +401,15 @@ Error message and password prompt
 
 <li>Order a list</li>
 
+<li>preTitle</li>
+
+<li>previousItem</li>
+
+<li>previousTitle</li>
+
 <li>Products</li>
+
+<li>Side Menus</li>
 
 <li>Start</li>
 
@@ -419,6 +455,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div modified="20150404140909449" title="_dat">
+<pre>4-control with list-before/list-after</pre>
+</div>
 <div modified="20150330232844702" title="_fields">
 <pre>[fields[topmenu/config]prefix[_]]</pre>
 </div>
@@ -5718,7 +5757,7 @@ Configure your top menu bar.
 <div created="20150329110858075" modified="20150330190511472" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/icons">
 <pre>show</pre>
 </div>
-<div caption="Main Settings" created="20150330191110591" modified="20150330194040345" tags="$:/plugins/lepako/tidplus/topmenu/settings" title="$:/plugins/lepako/tidplus/topmenu/settings/main">
+<div caption="Main Settings" created="20150330191110591" modified="20150401215346772" tags="$:/plugins/lepako/tidplus/topmenu/settings [[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/main">
 <pre>&lt;$link to=&quot;$:/plugins/lepako/tidplus/topmenu/settings/main&quot; class=&quot;right&quot;&gt;Edit this tiddler &lt;/$link&gt;
 
 &lt;$checkbox tag=&quot;$:/tags/TopLeftBar&quot; tiddler=&quot;$:/plugins/lepako/tidplus/topmenu&quot; /&gt; Enable Top Menu
@@ -5728,7 +5767,7 @@ Configure your top menu bar.
 &lt;$checkbox field=&quot;text&quot; checked=&quot;show&quot; unchecked=&quot;hide&quot; tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/settings/icons&quot; /&gt; Show Icons 
 </pre>
 </div>
-<div caption="Order Items" created="20150330191150310" modified="20150331130842699" tags="$:/plugins/lepako/tidplus/topmenu/settings" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
+<div caption="Order Items" created="20150330191150310" modified="20150401215317477" tags="$:/plugins/lepako/tidplus/topmenu/settings [[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
 <pre>\define addConfig(var) $:/config/TopMenu/Visibility/$var$
 
 &lt;$link to=&quot;$:/plugins/lepako/tidplus/topmenu/settings/order&quot; class=&quot;right&quot;&gt;Edit this tiddler &lt;/$link&gt;
@@ -5767,7 +5806,7 @@ Order the menu items
 <div created="20150329103239108" modified="20150330190636256" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/scrollbuttons">
 <pre>hide</pre>
 </div>
-<div created="20150312214814880" modified="20150322171306435" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
+<div created="20150312214814880" modified="20150401214001417" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 tc-story-river { top:40px;}
@@ -5782,8 +5821,8 @@ background-color: &lt;&lt;color page-background&gt;&gt;
 left: 0px;
 /*background-color: #F8F8F8; */
 border-bottom: 1px solid  &lt;&lt;color tab-border &gt;&gt; ;
-width: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}};
-
+/*width: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}}; */
+width: 100%;
 }
 
 .tidplus-topbar{
@@ -5917,8 +5956,8 @@ font-size: 1.2em;
 <div modified="20150330230811078" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div modified="20150331131038058" title="$:/state/sidebar">
-<pre>yes</pre>
+<div modified="20150404155423321" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div modified="20150330192135823" title="$:/state/tab--1020931767">
 <pre>General</pre>
@@ -5932,7 +5971,7 @@ font-size: 1.2em;
 <div modified="20150329134244236" title="$:/state/tab--146773019">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div modified="20150331130540420" title="$:/state/tab--1498284803">
+<div modified="20150402220104643" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
 <div modified="20150324004656696" title="$:/state/tab--1640377399">
@@ -5953,8 +5992,11 @@ font-size: 1.2em;
 <div modified="20150313164058543" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/LoadedModules</pre>
 </div>
-<div modified="20150330194026825" title="$:/state/tab-1250738789">
-<pre>$:/plugins/lepako/tidplus/topmenu/settings/main</pre>
+<div modified="20150331220151767" title="$:/state/tab-1036691963">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
+</div>
+<div modified="20150401215453905" title="$:/state/tab-1250738789">
+<pre>$:/plugins/lepako/tidplus/topmenu/settings/order</pre>
 </div>
 <div modified="20150314005338386" title="$:/state/tab-1382582779">
 <pre>$:/core/ui/TiddlerInfo/Listed</pre>
@@ -5962,7 +6004,7 @@ font-size: 1.2em;
 <div modified="20150329212722262" title="$:/state/tab-1427503023">
 <pre>$:/core/ui/TiddlerInfo/Fields</pre>
 </div>
-<div modified="20150331124606322" title="$:/state/tab-1486726048">
+<div modified="20150401215332307" title="$:/state/tab-1486726048">
 <pre>$:/plugins/lepako/tidplus/topmenu/settings/main</pre>
 </div>
 <div modified="20150321125441963" title="$:/state/tab-159240502">
@@ -5971,7 +6013,7 @@ font-size: 1.2em;
 <div modified="20150329134306855" title="$:/state/tab-1692304978">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div modified="20150331121359534" title="$:/state/tab-1749438307">
+<div modified="20150401215229888" title="$:/state/tab-1749438307">
 <pre>$:/plugins/lepako/tidplus/topmenu/settings</pre>
 </div>
 <div modified="20150309232304863" title="$:/state/tab-1803318191">
@@ -6001,8 +6043,8 @@ font-size: 1.2em;
 <div modified="20150326220637739" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div modified="20150330193734844" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div modified="20150401180333965" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div modified="20150319003404971" title="$:/state/toc/A faire-Create a tiddler Explorer--1317564193">
 <pre>close</pre>
@@ -6013,20 +6055,26 @@ font-size: 1.2em;
 <div modified="20150329125227450" title="$:/state/toc/A faire-New Theme--1317564193">
 <pre>close</pre>
 </div>
+<div modified="20150401215109098" title="$:/state/toc/A faire-Side Menus--1317564193">
+<pre>open</pre>
+</div>
 <div modified="20150329124938276" title="$:/state/toc/A faire-Tiddler Types--1317564193">
 <pre>close</pre>
 </div>
 <div modified="20150308221155298" title="$:/state/toc/A faire-tidExplorer--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150329132520633" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
-<pre>open</pre>
+<div modified="20150331131912744" title="$:/state/toc/A faire-Top horizontal Menu--1317564193">
+<pre>close</pre>
 </div>
 <div modified="20150329182448334" title="$:/state/toc/Order a list-test--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150331131313436" title="$:/state/toc/Start-A faire--1317564193">
+<div modified="20150401213824261" title="$:/state/toc/Side Menus-Top horizontal Menu--1317564193">
 <pre>open</pre>
+</div>
+<div modified="20150401220118930" title="$:/state/toc/Start-A faire--1317564193">
+<pre>close</pre>
 </div>
 <div modified="20150329173234191" title="$:/state/toc/Start-Done--1317564193">
 <pre>close</pre>
@@ -6034,7 +6082,10 @@ font-size: 1.2em;
 <div modified="20150319211918341" title="$:/state/toc/Start-Features--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150331131045625" title="$:/state/toc/Start-Tests--1317564193">
+<div modified="20150404150110865" title="$:/state/toc/Start-Tests--1317564193">
+<pre>open</pre>
+</div>
+<div modified="20150401215739501" title="$:/state/toc/Test menu gauche-$:/plugins/lepako/tidplus/topmenu/settings--1317564193">
 <pre>close</pre>
 </div>
 <div modified="20150319004222757" title="$:/state/toc/Test menu gauche-Menu1--1317564193">
@@ -6049,14 +6100,14 @@ font-size: 1.2em;
 <div modified="20150329124024005" title="$:/state/toc/Top horizontal Menu-Menu1--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150331131318168" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
+<div modified="20150401215506698" title="$:/state/toc/Top horizontal Menu-Test menu gauche--1317564193">
 <pre>open</pre>
 </div>
-<div list="$:/AdvancedSearch Start $:/plugins/lepako/tidplus/topmenu/template/menuitem" title="$:/StoryList">
+<div list="$:/AdvancedSearch Start test [[Item 4]] [[Item 1]] [[Item 2]] [[Item 3]] [[4-control with list-before/list-after]]" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20150307122948000" modified="20150331130543209" title="$:/temp/advancedsearch">
-<pre>[all[]prefix[$:/config/TopMenu/Visibility/]]</pre>
+<div created="20150307122948000" modified="20150404121424919" title="$:/temp/advancedsearch">
+<pre>[tag[test]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -6072,10 +6123,13 @@ font-size: 1.2em;
     }
 }</pre>
 </div>
-<div created="20150307113657574" modified="20150330191116157" title="$:/temp/NewTagName">
+<div created="20150307113657574" modified="20150401215341156" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20150307112250275" modified="20150331000053059" title="$:/temp/search">
+<div created="20150307112250275" modified="20150404150446856" title="$:/temp/search">
+<pre></pre>
+</div>
+<div created="20150401215000122" modified="20150401215015882" tags="[[Test menu gauche]]" title="$:/temp/topmenu">
 <pre></pre>
 </div>
 <div modified="20150315232454461" title="$:/theme">
@@ -6176,100 +6230,7 @@ font-size: 1.2em;
 <div created="20150312225139206" modified="20150312225142073" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>686px</pre>
 </div>
-<div created="20150307121246315" modified="20150307121333681" tags="[[A faire]]" title="1.Learn to create plugins">
-<pre>Learn how to create plugins to package features and separate them from core features </pre>
-</div>
-<div created="20150222145600594" creator="ID-man" modified="20150319210556042" modifier="ID-man" tags="sticky Start" title="A faire">
-<pre>!!!Ameliorations
-* clean-up de `l'UI`
-** ajouter paragraphes `accordeon` (cf widget //reveal//)
-** cacher les onglets Tools et More
-** creer un mode `read-only`
-* creer des templates de tidbits: 
-** ~~pays~~ 
-** ~~projets~~ 
-** produit 
-** ~~fournisseur~~
-* grouper les phases de projets par pays (hint: operator `each`)
-* ? import: retirer les champs __isocode__ des projets (l'info est dans un tag) ?
-
-!!!Fonctionalites
-* templates pour creer des projets (et pays?)
-* templates pour editer projets et pays 
-* ~~liste de projets par fournisseur/region~~
-
-!!!Problemes
-* la recherche ne marche pas: elle n'indexe pas les champs de donnees... juste le texte et titre
-* comment filtrer les nombres (ex: &quot;&gt;2014&quot;) ?
-* format des nombres a changer (ex:1 000 au lieu de 1000)
-* liste trop longue de pays dans SideBar
-* il ne peut y avoir qu'un fournisseur pour une partie de la chaine de valeur (sinon le lien dans la fiche projet renvoie sur un tiddler foireux) 
-
-</pre>
-</div>
-<div created="20150311200246308" modified="20150311201421757" tags="$:/form" title="Actors">
-<pre>|!Prime contractor |&lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
-|!Card provider |&lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
-|!Module/Inlay provider | &lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
-|!Card plastic provider | &lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |</pre>
-</div>
-<div created="20150319200649328" modified="20150319200708650" tags="[[Test menu gauche]]" title="backup $:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
-<pre>&lt;!-- Commentaires : 
-
---&gt;
-&lt;div class=&quot;tidplus-topbar _navbar _navbar-default&quot; &gt;
-&lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/plugins/lepako/tidplus/images/arrow-left}}&lt;/button&gt;&lt;/span&gt;
-&lt;$list filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]]&quot; template=&quot;$:/plugins/lepako/tidplus/topmenu/template/menuitem&quot; /&gt;
-&lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/core/images/right-arrow}}&lt;/button&gt;&lt;/span&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20150319200547666" modified="20150329234524996" tags="[[Test menu gauche]]" title="button/left" type="text/vnd.tiddlywiki">
-<pre>&lt;$set name=&quot;refreshList&quot; 
-filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]&quot; 
-value={{!!title}} &gt;
-&lt;$set name=&quot;_nextTid&quot; 
-filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]!list[$:/plugins/lepako/tidplus/topmenu/list]last[]] [list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
-&lt;span class=&quot;tidplus-nav&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
-&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;refreshList&gt;&gt; /&gt;
-&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;_nextTid&gt;&gt; /&gt;
-{{$:/plugins/lepako/tidplus/images/arrow-left}}&lt;/$button&gt;&lt;/span&gt;
-&lt;/$set&gt;
-&lt;/$set&gt;</pre>
-</div>
-<div created="20150319200605165" modified="20150328155419454" tags="[[Test menu gauche]]" title="button/right" type="text/vnd.tiddlywiki">
-<pre>\define getUpdateList()
-&lt;$transclude tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/template/updateList&quot; mode=&quot;block&quot; /&gt;
-\end
-
-\define testMe()
-&lt;$set name=&quot;tada&quot; filter=&quot;[[sticky]tagging[]]&quot; value=&quot;direct_link&quot; emptyValue=&quot;no&quot; &gt;&lt;&lt;tada&gt;&gt;&lt;/$set&gt;
-\end
-
-&lt;span class=&quot;tidplus-nav&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify $(testMe)$ &gt;&gt; &gt;
-&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;testMe&gt;&gt; /&gt;
-&lt;&lt;qualify $(testMe)$&gt;&gt;
-{{$:/core/images/right-arrow}}
-&lt;/$button&gt;&lt;/span&gt;
-</pre>
-</div>
-<div created="20150326201711752" modified="20150326201718923" tags="[[Test menu gauche]]" title="button/right - backup" type="text/vnd.tiddlywiki">
-<pre>\define updateList()
-&lt;$list filter=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]butfirst[]]&quot; /&gt;
-\end
-
-&lt;$set name=&quot;_nextTid&quot; filter=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]butfirst[]]&quot; 
-value={{title}}
-emptyValue=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
-&lt;span class=&quot;tidplus-nav&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
-&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;nextTid&gt;&gt; /&gt;
-{{$:/core/images/right-arrow}}
-&lt;/$button&gt;&lt;/span&gt;
-&lt;/$set&gt;</pre>
-</div>
-<div created="20150329132006835" modified="20150329194929056" tags="[[Order a list]]" title="control" type="text/vnd.tiddlywiki">
+<div created="20150329132006835" modified="20150402210649511" tags="[[Order a list]]" title="1-control with taglist" type="text/vnd.tiddlywiki">
 <pre>\define addAfter(var1, var2) $var1$ [[$var2$]]
 \define addBefore(var1, var2) [[$var2$]] $var1$
 
@@ -6300,7 +6261,10 @@ emptyValue=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
 &lt;/$button&gt;
 &lt;/$set&gt;</pre>
 </div>
-<div created="20150329194932775" modified="20150330195203342" tags="[[Order a list]]" title="control 2" type="text/vnd.tiddlywiki">
+<div created="20150307121246315" modified="20150307121333681" tags="[[A faire]]" title="1.Learn to create plugins">
+<pre>Learn how to create plugins to package features and separate them from core features </pre>
+</div>
+<div created="20150329194932775" modified="20150402210742098" tags="[[Order a list]]" title="2-control with taglist and previous/next item" type="text/vnd.tiddlywiki">
 <pre>\define addAfter(var1, var2) $var1$ $var2$
 \define addBefore(var1, var2) $var2$ $var1$
 
@@ -6352,6 +6316,246 @@ emptyValue=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
 
 &lt;/$set&gt;
 &lt;/$set&gt;</pre>
+</div>
+<div created="20150401221232975" modified="20150402210827179" tags="[[Order a list]]" title="3-control with temp file" type="text/vnd.tiddlywiki">
+<pre>\define addAfter(var1, var2) $var1$ $var2$
+\define addBefore(var1, var2) $var2$ $var1$
+\define temp() $:/temp/topmenu
+\define navList() [tag[test]]
+
+\define writelist(input)
+&lt;$text text=&quot;$input$&quot; /&gt;
+\end
+
+!!Set Order of Items
+
+&lt;$set name=&quot;_list&quot; filter=&quot;[tag[test]]&quot; &gt;
+
+&lt;$list filter=&lt;&lt;navList&gt;&gt; variable=&quot;listItem&quot;&gt;
+&lt;$view tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;title&quot; /&gt;
+&lt;$set name=&quot;datItem&quot; filter=&quot;[&lt;listItem&gt;]&quot; &gt;
+&lt;$set name=&quot;previousItem&quot; filter=&quot;[tag[test]]-[tag[test]previous&lt;listItem&gt;]&quot; &gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-up}}(&lt;&lt;datItem&gt;&gt;)
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&lt;&lt;previousItem&gt;&gt; /&gt;
+&lt;/$button&gt;
+&lt;/$set&gt;
+&lt;$set name=&quot;nextItem&quot; filter=&quot;[tag[test]after&lt;listItem&gt;]&quot; &gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-down}}(&lt;&lt;nextItem&gt;&gt;)
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&lt;&lt;addBefore $(_list)$ $(nextItem)$&gt;&gt; /&gt;
+&lt;/$button&gt;
+
+&lt;/$set&gt;
+&lt;/$set&gt;
+
+&lt;br&gt;
+
+
+&lt;/$list&gt;
+
+
+&lt;hr&gt;
+
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&lt;&lt;addBefore $(_list)$ $(datItem)$&gt;&gt; /&gt;
+
+&lt;br&gt;
+
+&lt;$button&gt;&lt;i class=&quot;fa fa-refresh&quot; /&gt; Refresh the list
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&quot;&quot; /&gt;
+
+&lt;/$button&gt;
+&lt;$button&gt;&lt;i class=&quot;fa fa-refresh&quot; /&gt; Fill the list
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&lt;&lt;_list&gt;&gt; /&gt;
+&lt;/$button&gt;
+
+
+&lt;/$set&gt;</pre>
+</div>
+<div created="20150402212310237" current="previousItem" modified="20150404155721969" tags="[[Order a list]]" title="4-control with list-before/list-after" type="text/vnd.tiddlywiki">
+<pre>\define temp() $:/temp/topmenu
+\define navList() [tag[test]]
+\define getPrevious() [tag[test]before[$(listItem)$]]
+\define getNext() [tag[test]after[$(listItem)$]]
+
+
+!!Set Order of Items
+
+&lt;$list filter=&lt;&lt;navList&gt;&gt; variable=&quot;listItem&quot;&gt;
+&lt;$view tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;title&quot; /&gt;
+
+&lt;$list variable=&quot;previousItem&quot; filter=&lt;&lt;getPrevious&gt;&gt; emptyMessage=&quot;&lt;$button class='tc-btn-invisible' &gt;{{$:/core/images/chevron-up}}&lt;/$button&gt;&quot; &gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&lt;&lt;listItem&gt;&gt; list-before=&lt;&lt;previousItem&gt;&gt; /&gt;
+&lt;$action-deletefield $tiddler=&lt;&lt;previousItem&gt;&gt; $field=&quot;list-before&quot; /&gt;
+
+{{$:/core/images/chevron-up}} 
+
+&lt;/$button&gt;
+&lt;/$list&gt;
+
+&lt;$list variable=&quot;nextItem&quot; filter=&lt;&lt;getNext&gt;&gt; emptyMessage=&quot;&lt;$button class='tc-btn-invisible' &gt;{{$:/core/images/chevron-down}}&lt;/$button&gt;&quot; &gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&lt;&lt;listItem&gt;&gt; list-after=&lt;&lt;nextItem&gt;&gt; /&gt;
+&lt;$action-deletefield $tiddler=&lt;&lt;nextItem&gt;&gt; $field=&quot;list-after&quot; /&gt;
+{{$:/core/images/chevron-down}}
+
+&lt;/$button&gt;
+
+&lt;/$list&gt;
+
+&lt;br&gt;
+
+
+&lt;/$list&gt;
+
+
+&lt;hr&gt;
+
+&lt;br&gt;
+
+&lt;$button&gt;
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&quot;&quot; /&gt;
+&lt;i class=&quot;fa fa-trash&quot; /&gt; Clear the list
+&lt;/$button&gt;
+
+&lt;$button&gt;
+&lt;$action-setfield $tiddler=&quot;test&quot; list=&lt;&lt;navList&gt;&gt; /&gt;
+&lt;i class=&quot;fa fa-refresh&quot; /&gt; Fill the list
+&lt;/$button&gt;
+</pre>
+</div>
+<div color="#ff6c12" created="20150222145600594" creator="ID-man" modified="20150331215731049" modifier="ID-man" tags="sticky Start" title="A faire">
+<pre>!!!Ameliorations
+* clean-up de `l'UI`
+** ajouter paragraphes `accordeon` (cf widget //reveal//)
+** cacher les onglets Tools et More
+** creer un mode `read-only`
+* creer des templates de tidbits: 
+** ~~pays~~ 
+** ~~projets~~ 
+** produit 
+** ~~fournisseur~~
+* grouper les phases de projets par pays (hint: operator `each`)
+* ? import: retirer les champs __isocode__ des projets (l'info est dans un tag) ?
+
+!!!Fonctionalites
+* templates pour creer des projets (et pays?)
+* templates pour editer projets et pays 
+* ~~liste de projets par fournisseur/region~~
+
+!!!Problemes
+* la recherche ne marche pas: elle n'indexe pas les champs de donnees... juste le texte et titre
+* comment filtrer les nombres (ex: &quot;&gt;2014&quot;) ?
+* format des nombres a changer (ex:1 000 au lieu de 1000)
+* liste trop longue de pays dans SideBar
+* il ne peut y avoir qu'un fournisseur pour une partie de la chaine de valeur (sinon le lien dans la fiche projet renvoie sur un tiddler foireux) 
+
+</pre>
+</div>
+<div created="20150311200246308" modified="20150311201421757" tags="$:/form" title="Actors">
+<pre>|!Prime contractor |&lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
+|!Card provider |&lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
+|!Module/Inlay provider | &lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |
+|!Card plastic provider | &lt;$edit-text tiddler=&quot;&quot; field=&quot;&quot; /&gt; |</pre>
+</div>
+<div created="20150319200649328" modified="20150319200708650" tags="[[Test menu gauche]]" title="backup $:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
+<pre>&lt;!-- Commentaires : 
+
+--&gt;
+&lt;div class=&quot;tidplus-topbar _navbar _navbar-default&quot; &gt;
+&lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/plugins/lepako/tidplus/images/arrow-left}}&lt;/button&gt;&lt;/span&gt;
+&lt;$list filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]]&quot; template=&quot;$:/plugins/lepako/tidplus/topmenu/template/menuitem&quot; /&gt;
+&lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/core/images/right-arrow}}&lt;/button&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+<div created="20150331215216412" modified="20150401180439401" tags="sticky $:/tags/PageTemplate" title="bottom menu">
+<pre>!Menu</pre>
+</div>
+<div created="20150319200547666" modified="20150329234524996" tags="[[Test menu gauche]]" title="button/left" type="text/vnd.tiddlywiki">
+<pre>&lt;$set name=&quot;refreshList&quot; 
+filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]&quot; 
+value={{!!title}} &gt;
+&lt;$set name=&quot;_nextTid&quot; 
+filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]!list[$:/plugins/lepako/tidplus/topmenu/list]last[]] [list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
+&lt;span class=&quot;tidplus-nav&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;refreshList&gt;&gt; /&gt;
+&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;_nextTid&gt;&gt; /&gt;
+{{$:/plugins/lepako/tidplus/images/arrow-left}}&lt;/$button&gt;&lt;/span&gt;
+&lt;/$set&gt;
+&lt;/$set&gt;</pre>
+</div>
+<div created="20150319200605165" modified="20150328155419454" tags="[[Test menu gauche]]" title="button/right" type="text/vnd.tiddlywiki">
+<pre>\define getUpdateList()
+&lt;$transclude tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/template/updateList&quot; mode=&quot;block&quot; /&gt;
+\end
+
+\define testMe()
+&lt;$set name=&quot;tada&quot; filter=&quot;[[sticky]tagging[]]&quot; value=&quot;direct_link&quot; emptyValue=&quot;no&quot; &gt;&lt;&lt;tada&gt;&gt;&lt;/$set&gt;
+\end
+
+&lt;span class=&quot;tidplus-nav&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify $(testMe)$ &gt;&gt; &gt;
+&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;testMe&gt;&gt; /&gt;
+&lt;&lt;qualify $(testMe)$&gt;&gt;
+{{$:/core/images/right-arrow}}
+&lt;/$button&gt;&lt;/span&gt;
+</pre>
+</div>
+<div created="20150326201711752" modified="20150326201718923" tags="[[Test menu gauche]]" title="button/right - backup" type="text/vnd.tiddlywiki">
+<pre>\define updateList()
+&lt;$list filter=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]butfirst[]]&quot; /&gt;
+\end
+
+&lt;$set name=&quot;_nextTid&quot; filter=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]butfirst[]]&quot; 
+value={{title}}
+emptyValue=&quot;[list[$:/plugins/lepako/tidplus/topmenu/list]]&quot; &gt;
+&lt;span class=&quot;tidplus-nav&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$action-setfield $tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/list&quot; list=&lt;&lt;nextTid&gt;&gt; /&gt;
+{{$:/core/images/right-arrow}}
+&lt;/$button&gt;&lt;/span&gt;
+&lt;/$set&gt;</pre>
+</div>
+<div created="20150401064248281" modified="20150401180209371" tags="$:/tags/ControlPanel" title="Config/tiddlers">
+<pre>@@.right [[Edit this tiddler|Config/tiddlers]]
+@@
+
+''Goal:''  Assign system tags to tiddlers
+
+&lt;$list filter=&quot;[all[shadows]prefix[$:/tags/]]&quot; variable=&quot;_tag&quot;&gt;
+&lt;$checkbox tiddler=&quot;&quot; tag=&quot;_tag&quot;&gt;&lt;$link to=&lt;&lt;_tag&gt;&gt; &gt; &lt;&lt;_tag&gt;&gt;&lt;/$link&gt; &lt;/$checkbox&gt;
+&lt;br&gt;
+&lt;/$list&gt;
+
+* {{$:/tags/AboveStory||$:/core/ui/TagTemplate}} for elements to be placed at the top of the story river
+* {{$:/tags/AdvancedSearch||$:/core/ui/TagTemplate}} for search elements
+* {{$:/tags/Alert||$:/core/ui/TagTemplate}} for alerts
+* {{$:/tags/BelowStory||$:/core/ui/TagTemplate}} for elements to be placed at the bottom of the story river
+* {{$:/tags/ControlPanel||$:/core/ui/TagTemplate}} for control panel tabs
+* {{$:/tags/ControlPanel/Advanced||$:/core/ui/TagTemplate}} for control panel advanced tabs
+* {{$:/tags/ControlPanel/Appearance||$:/core/ui/TagTemplate}} for control panel appearance tabs
+* {{$:/tags/ControlPanel/Info||$:/core/ui/TagTemplate}} for control panel info tabs
+* {{$:/tags/ControlPanel/Settings||$:/core/ui/TagTemplate}} for control panel settings tabs
+* {{$:/tags/ControlPanel/Toolbars||$:/core/ui/TagTemplate}} for control panel toolbar customisation tabs
+* {{$:/tags/EditTemplate||$:/core/ui/TagTemplate}} for the edit template
+* {{$:/tags/EditToolbar||$:/core/ui/TagTemplate}} for the edit mode tiddler toolbar
+* {{$:/tags/Filter||$:/core/ui/TagTemplate}} for filters in advanced seach sample filter dropdown
+* {{$:/tags/Image||$:/core/ui/TagTemplate}} for (core) images
+* {{$:/tags/Macro||$:/core/ui/TagTemplate}} for global macros
+* {{$:/tags/MoreSideBar||$:/core/ui/TagTemplate}} for tabs in the &quot;more&quot; sidebar
+* {{$:/tags/PageControls||$:/core/ui/TagTemplate}} for the page control tools in the sidebar
+* {{$:/tags/PageTemplate||$:/core/ui/TagTemplate}} for the main page elements
+* {{$:/tags/Palette||$:/core/ui/TagTemplate}} for colour palettes
+* {{$:/tags/RawMarkup||$:/core/ui/TagTemplate}} for raw markup to be included in the generated HTML file
+* {{$:/tags/SideBar||$:/core/ui/TagTemplate}} for sidebar tabs
+* {{$:/tags/Stylesheet||$:/core/ui/TagTemplate}} to indicate that a tiddler should be applied as a CSS stylesheet
+* {{$:/tags/TiddlerInfo||$:/core/ui/TagTemplate}} for tiddler info panel tabs
+* {{$:/tags/TiddlerInfo/Advanced||$:/core/ui/TagTemplate}} for tabs under the advanced tiddler tab
+* {{$:/tags/TopLeftBar||$:/core/ui/TagTemplate}} for the top left bar
+* {{$:/tags/TopRightBar||$:/core/ui/TagTemplate}} for the top right bar
+* {{$:/tags/ViewTemplate||$:/core/ui/TagTemplate}} for the view template
+* {{$:/tags/ViewToolbar||$:/core/ui/TagTemplate}} for the view mode tiddler toolbar
+</pre>
 </div>
 <div created="20150311195652730" modified="20150321124259008" tags="$:/form" title="Country">
 <pre>!!!Region &lt;$select tiddler=&quot;&quot; default=&quot;&quot; field=&quot;&quot; &gt;&lt;option&gt;Europe&lt;/option&gt;&lt;/$select&gt;
@@ -6500,6 +6704,12 @@ Add a way to manage these default values, what they point to, etc.</pre>
 <div created="20150329124549947" modified="20150329124604949" tags="[[A faire]]" title="Field Manager">
 <pre></pre>
 </div>
+<div created="20150331213357348" modified="20150331213419039" tags="Bookmark" title="http://tw5custom.tiddlyspot.com/">
+<pre>TonGerner</pre>
+</div>
+<div created="20150331211702278" modified="20150331211838210" tags="Bookmark" title="http://wills.tiddlyspot.com/">
+<pre>Matabele's tiddlyspot</pre>
+</div>
 <div created="20150308140010674" modified="20150308141449368" tags="" title="icon-auto">
 <pre>&lt;$list filter=&quot;[all[current]tag[Welcome]]&quot; &gt;{{custom/icon/home}}&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]tag[company]]&quot; &gt;{{custom/icon/company}}&lt;/$list&gt;
@@ -6525,14 +6735,24 @@ Add a way to manage these default values, what they point to, etc.</pre>
 * define xsd from imported tiddlers
 * us this xsd to export tiddlers</pre>
 </div>
-<div created="20150329131821015" modified="20150329134421156" tags="[[Order a list]] test" title="Item 1">
-<pre></pre>
+<div created="20150329131821015" modified="20150404155231517" tags="[[Order a list]] test" title="Item 1">
+<pre>|{{!!list-after}}|!{{!!title}}|{{!!list-before}}|</pre>
 </div>
-<div created="20150329131905271" modified="20150329131909980" tags="[[Order a list]] test" title="Item 2">
-<pre></pre>
+<div created="20150329131905271" modified="20150404155308461" tags="[[Order a list]] test" title="Item 2">
+<pre>|{{!!list-after}}|!{{!!title}}|{{!!list-before}}|</pre>
 </div>
-<div created="20150329131917545" modified="20150329131921929" tags="[[Order a list]] test" title="Item 3">
-<pre></pre>
+<div created="20150329131917545" list-after="Item 2" list-before="Item 1" modified="20150404155410579" tags="[[Order a list]] test" title="Item 3">
+<pre>|{{!!list-after}}|!{{!!title}}|{{!!list-before}}|</pre>
+</div>
+<div created="20150404115533563" list-before="Item 2" modified="20150404155408033" tags="[[Order a list]] test" title="Item 4">
+<pre>|{{!!list-after}}|!{{!!title}}|{{!!list-before}}|</pre>
+</div>
+<div created="20150401181530127" modified="20150401181801414" tags="[[Side Menus]]" title="Left/Right Menu">
+<pre>Goal: create a side menu compatible with tablets (with horizontal nav buttons)
+
+*Inspect [[$:/core/ui/PageTemplate/sidebar]]
+
+</pre>
 </div>
 <div caption="Top Menu Items" created="20150321182510202" modified="20150321182712701" tags="$:/tags/SideBar" title="List of Top Menu items">
 <pre>&lt;&lt;list-links filter:&quot;[tag[$:/custom/topmenu]!has[draft.of]]&quot;&gt;&gt;</pre>
@@ -6609,6 +6829,15 @@ The list is in tiddler [[list]] in its `list` field
 The list is controlled through tiddler [[control]]
 </pre>
 </div>
+<div modified="20150404141615502" title="preTitle">
+<pre>tada</pre>
+</div>
+<div modified="20150404123214306" title="previousItem">
+<pre>$(previousItem)$!!title</pre>
+</div>
+<div modified="20150404110650011" title="previousTitle">
+<pre>$(previousItem)$!!title</pre>
+</div>
 <div created="20150311213233627" modified="20150321124626697" tags="$:/form" title="Products" type="text/vnd.tiddlywiki">
 <pre>!!Document type
 Form factor 
@@ -6646,7 +6875,10 @@ Type of document
 &lt;$checkbox tag=&quot;ManagedServices&quot;  tiddler=&quot;&quot; default=&quot;&quot; field=&quot;&quot; &gt; Managed services ?&lt;/$checkbox&gt;
 </pre>
 </div>
-<div created="20150307112255882" icon="&lt;i class=&quot;fa fa-home fa-lg&quot; /&gt;" modified="20150329133956017" tags="$:/custom/topmenu" title="Start">
+<div created="20150331191857025" modified="20150331191922275" tags="[[A faire]]" title="Side Menus">
+<pre></pre>
+</div>
+<div color="#003bc5" created="20150307112255882" icon="&lt;i class=&quot;fa fa-home fa-lg&quot; /&gt;" modified="20150331215558004" tags="$:/custom/topmenu" title="Start">
 <pre>This section is the start page.
 
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -6654,13 +6886,13 @@ Type of document
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="Stickies" created="20150318223722185" icon="&lt;i class=&quot;fa fa-star-o fa-lg&quot; /&gt;" modified="20150329134017825" tags="$:/custom/topmenu" title="sticky">
+<div caption="Stickies" color="#ce0000" created="20150318223722185" icon="&lt;i class=&quot;fa fa-star-o fa-lg&quot; /&gt;" modified="20150331215535773" tags="$:/custom/topmenu" title="sticky">
 <pre></pre>
 </div>
 <div created="20150307121343608" modified="20150329125223272" tags="[[New Theme]]" title="Templates/Themes">
 <pre>Learn/Create templates and themes</pre>
 </div>
-<div created="20150329182423020" list="[[Item 3]] [[Item 1]] [[Item 2]]" modified="20150330195316338" tags="[[Order a list]]" title="test">
+<div created="20150329182423020" modified="20150404150323010" tags="[[Order a list]]" title="test">
 <pre>Tagged: &lt;&lt;list-links filter:&quot;[tag[test]]&quot; &gt;&gt;
 
 List: {{!!list}}
@@ -6759,7 +6991,7 @@ add the tag `$:/custom/topmenu` to the tiddler
 
 &lt;&lt;tabs &quot;1 2 3 &quot; &quot;1&quot; &quot;&quot; &quot;tc-vertical&quot;&gt;&gt;</pre>
 </div>
-<div created="20150312213535505" modified="20150315232140154" tags="[[A faire]]" title="Top horizontal Menu">
+<div created="20150312213535505" modified="20150331191939617" tags="[[Side Menus]]" title="Top horizontal Menu">
 <pre>Design CSS for TopMenu
 
 Relevant tags:
