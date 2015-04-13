@@ -127,6 +127,18 @@ Error message and password prompt
 
 <li>$:/config/Toolbar/Text</li>
 
+<li>$:/config/TopMenu/Visibility/$:/core/ui/Buttons/advanced-search</li>
+
+<li>$:/config/TopMenu/Visibility/$:/core/ui/Buttons/control-panel</li>
+
+<li>$:/config/TopMenu/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/TopMenu/Visibility/$:/tags/Stylesheet</li>
+
+<li>$:/config/TopMenu/Visibility/button-link</li>
+
+<li>$:/config/TopMenu/Visibility/direct_link</li>
+
 <li>$:/config/TopMenu/Visibility/Start</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info</li>
@@ -134,6 +146,14 @@ Error message and password prompt
 <li>$:/core</li>
 
 <li>$:/core/images/mail</li>
+
+<li>$:/core/ui/Buttons/advanced-search</li>
+
+<li>$:/core/ui/Buttons/control-panel</li>
+
+<li>$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/custom/topmenu</li>
 
 <li>$:/DefaultTiddlers</li>
 
@@ -145,13 +165,13 @@ Error message and password prompt
 
 <li>$:/palette</li>
 
+<li>$:/plugins/lepako/tidplus/footbar/stylesheet</li>
+
 <li>$:/plugins/lepako/tidplus/images/arrow-left</li>
 
 <li>$:/plugins/lepako/tidplus/images/arrow-up</li>
 
 <li>$:/plugins/lepako/tidplus/topmenu</li>
-
-<li>$:/plugins/lepako/tidplus/topmenu/hidefromlist</li>
 
 <li>$:/plugins/lepako/tidplus/topmenu/list</li>
 
@@ -185,11 +205,15 @@ Error message and password prompt
 
 <li>$:/state/tab--1095126628</li>
 
+<li>$:/state/tab--1255653655</li>
+
 <li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab--2112689675</li>
+
+<li>$:/state/tab--627047625</li>
 
 <li>$:/state/tab--86143343</li>
 
@@ -205,13 +229,21 @@ Error message and password prompt
 
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
+<li>$:/state/toc/A faire-Faire un formulaire d'entree de donnees--1317564193</li>
+
 <li>$:/state/toc/A faire-Side Menus--1317564193</li>
+
+<li>$:/state/toc/Side Menus-Footer Menu Bar--1317564193</li>
 
 <li>$:/state/toc/Side Menus-Top horizontal Menu--1317564193</li>
 
 <li>$:/state/toc/Start-A faire--1317564193</li>
 
+<li>$:/state/toc/Start-Features--1317564193</li>
+
 <li>$:/state/toc/Start-Tests--1317564193</li>
+
+<li>$:/state/toc/Test menu gauche-$:/plugins/lepako/tidplus/topmenu/settings--1317564193</li>
 
 <li>$:/state/toc/Tests-Order a list--1317564193</li>
 
@@ -220,6 +252,8 @@ Error message and password prompt
 <li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/tags/Stylesheet</li>
 
 <li>$:/temp/advancedsearch</li>
 
@@ -277,10 +311,6 @@ Error message and password prompt
 
 <li>backup $:/plugins/lepako/tidplus/topmenu</li>
 
-<li>bottom menu</li>
-
-<li>button-link</li>
-
 <li>button/left</li>
 
 <li>button/right</li>
@@ -330,6 +360,10 @@ Error message and password prompt
 <li>Features</li>
 
 <li>Field Manager</li>
+
+<li>footBar</li>
+
+<li>Footer Menu Bar</li>
 
 <li>http://tw5custom.tiddlyspot.com/</li>
 
@@ -458,7 +492,25 @@ Error message and password prompt
 <div modified="20150412150231853" modifier="le-pako" title="$:/config/Toolbar/Text">
 <pre>no</pre>
 </div>
-<div modified="20150413091518741" modifier="le-pako" title="$:/config/TopMenu/Visibility/Start">
+<div modified="20150413222153326" modifier="le-pako" title="$:/config/TopMenu/Visibility/$:/core/ui/Buttons/advanced-search">
+<pre>text</pre>
+</div>
+<div modified="20150413214416975" modifier="le-pako" title="$:/config/TopMenu/Visibility/$:/core/ui/Buttons/control-panel">
+<pre>text</pre>
+</div>
+<div modified="20150413214421392" modifier="le-pako" title="$:/config/TopMenu/Visibility/$:/core/ui/Buttons/new-tiddler">
+<pre>text</pre>
+</div>
+<div modified="20150413214435483" modifier="le-pako" title="$:/config/TopMenu/Visibility/$:/tags/Stylesheet">
+<pre>title</pre>
+</div>
+<div modified="20150413223331341" modifier="le-pako" title="$:/config/TopMenu/Visibility/button-link">
+<pre>text</pre>
+</div>
+<div modified="20150413223428000" modifier="le-pako" title="$:/config/TopMenu/Visibility/direct_link">
+<pre>title</pre>
+</div>
+<div modified="20150413223536439" modifier="le-pako" title="$:/config/TopMenu/Visibility/Start">
 <pre>title</pre>
 </div>
 <div modified="20150319224119099" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info">
@@ -5947,6 +5999,53 @@ Error message and password prompt
     &lt;/g&gt;
 &lt;/svg&gt;</pre>
 </div>
+<div caption="{{$:/core/images/advanced-search-button}} {{$:/language/Buttons/AdvancedSearch/Caption}}" created="20150413154749928" creator="le-pako" description="{{$:/language/Buttons/AdvancedSearch/Hint}}" modified="20150413154749928" modifier="le-pako" tags="$:/tags/PageControls $:/custom/topmenu" title="$:/core/ui/Buttons/advanced-search">
+<pre>\define control-panel-button(class)
+&lt;$button to=&quot;$:/AdvancedSearch&quot; tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class=&quot;&quot;&quot;$(tv-config-toolbar-class)$ $class$&quot;&quot;&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
+{{$:/core/images/advanced-search-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/AdvancedSearch/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+
+&lt;$list filter=&quot;[list[$:/StoryList]] +[field:title[$:/AdvancedSearch]]&quot; emptyMessage=&lt;&lt;control-panel-button&gt;&gt;&gt;
+&lt;&lt;control-panel-button &quot;tc-selected&quot;&gt;&gt;
+&lt;/$list&gt;
+</pre>
+</div>
+<div caption="{{$:/core/images/options-button}} {{$:/language/Buttons/ControlPanel/Caption}}" created="20150413154828181" creator="le-pako" description="{{$:/language/Buttons/ControlPanel/Hint}}" modified="20150413154828181" modifier="le-pako" tags="$:/tags/PageControls $:/custom/topmenu" title="$:/core/ui/Buttons/control-panel">
+<pre>\define control-panel-button(class)
+&lt;$button to=&quot;$:/ControlPanel&quot; tooltip={{$:/language/Buttons/ControlPanel/Hint}} aria-label={{$:/language/Buttons/ControlPanel/Caption}} class=&quot;&quot;&quot;$(tv-config-toolbar-class)$ $class$&quot;&quot;&quot;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
+{{$:/core/images/options-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/ControlPanel/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+\end
+
+&lt;$list filter=&quot;[list[$:/StoryList]] +[field:title[$:/ControlPanel]]&quot; emptyMessage=&lt;&lt;control-panel-button&gt;&gt;&gt;
+&lt;&lt;control-panel-button &quot;tc-selected&quot;&gt;&gt;
+&lt;/$list&gt;
+</pre>
+</div>
+<div caption="{{$:/core/images/new-button}} {{$:/language/Buttons/NewTiddler/Caption}}" created="20150413154711854" creator="le-pako" description="{{$:/language/Buttons/NewTiddler/Hint}}" modified="20150413154711854" modifier="le-pako" tags="$:/tags/PageControls $:/custom/topmenu" title="$:/core/ui/Buttons/new-tiddler">
+<pre>&lt;$button message=&quot;tm-new-tiddler&quot; tooltip={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
+{{$:/core/images/new-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/NewTiddler/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;</pre>
+</div>
+<div color="#336699" created="20150413192459024" creator="le-pako" modified="20150413192813381" modifier="le-pako" title="$:/custom/topmenu">
+<pre></pre>
+</div>
 <div created="20150307112025887" modified="20150318235649620" title="$:/DefaultTiddlers">
 <pre>Start
 </pre>
@@ -5965,6 +6064,74 @@ Error message and password prompt
 <div modified="20150322171335834" title="$:/palette">
 <pre>$:/palettes/Vanilla</pre>
 </div>
+<div created="20150413224625571" creator="le-pako" modified="20150413230611876" modifier="le-pako" tags="$:/tags/Stylesheet [[Footer Menu Bar]]" title="$:/plugins/lepako/tidplus/footbar/stylesheet">
+<pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+&lt;pre&gt;
+tc-story-river { top:40px;}
+.tc-block-dropdown {margin-top: 0px;}
+
+.tidplus-footbar{
+position: fixed;
+bottom: 0px;
+height: 40px;
+width: 100%;
+background-color: white;
+/*background-color: &lt;&lt;color page-background&gt;&gt;; */
+border-top: 1px solid  &lt;&lt;color tab-border &gt;&gt; ;
+text-align: center;
+vertical-align: middle;
+}
+
+.tc-topbar {
+top: 0px;
+background-color: &lt;&lt;color page-background&gt;&gt;
+}
+
+.tc-topbar-left {
+left: 0px;
+/*background-color: #F8F8F8; */
+border-bottom: 1px solid  &lt;&lt;color tab-border &gt;&gt; ;
+/*width: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}}; */
+width: 100%;
+/*height: 40px;
+*/
+}
+
+.tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea
+.tidplus-topbar{
+width: auto;
+}
+.tc-control-panel label.tc-radio{
+padding:10px 5px 10px 5px;
+
+}
+
+.tidplus-nav{
+margin: 0 0px 0 0px;
+float:left;
+color: &lt;&lt;color sidebar-tiddler-link-foreground &gt;&gt;;
+}
+
+button.tidplus-nopad-left {padding-left: 0px;}
+button.tidplus-nopad-right {padding-right: 0px; }
+
+.tidplus-nav btn{
+padding: 8px}
+
+.tidplus-topbar{
+height: 40px;
+font-size: 1.1em;
+}
+
+div.tw5-topmenu  {
+width: {{$:/themes/tiddlywiki/vanilla/metrics/storywidth}};
+height: 40px;
+padding: 0.6em 42px 0 42px;
+font-size: 1.1em;
+}
+
+&lt;/pre&gt;</pre>
+</div>
 <div created="20150315230414076" modified="20150315234830215" tags="$:/tags/Image" title="$:/plugins/lepako/tidplus/images/arrow-left">
 <pre>&lt;svg class=&quot;tc-image-left-arrow tc-image-button&quot; width=&quot;22pt&quot; height=&quot;22pt&quot; viewBox=&quot;0 0 128 128&quot;&gt;
     &lt;path transform=&quot;rotate(135, 63.8945, 64.1752)&quot; d=&quot;m109.07576,109.35336c-1.43248,1.43361 -3.41136,2.32182 -5.59717,2.32182l-79.16816,0c-4.36519,0 -7.91592,-3.5444 -7.91592,-7.91666c0,-4.36337 3.54408,-7.91667 7.91592,-7.91667l71.25075,0l0,-71.25075c0,-4.3652 3.54442,-7.91592 7.91667,-7.91592c4.36336,0 7.91667,3.54408 7.91667,7.91592l0,79.16815c0,2.1825 -0.88602,4.16136 -2.3185,5.59467l-0.00027,-0.00056z&quot;/&gt;
@@ -5976,7 +6143,7 @@ Error message and password prompt
 &lt;/svg&gt;
  </pre>
 </div>
-<div created="20150314130644899" creator="le-pako" modified="20150412155549897" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
+<div created="20150314130644899" creator="le-pako" modified="20150413220721543" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/topmenu" type="text/vnd.tiddlywiki">
 <pre>\define _list()
 $:/plugins/lepako/tidplus/topmenu/list
 \end
@@ -6001,9 +6168,6 @@ emptyValue=&quot;&quot; &gt;
 
 
 </pre>
-</div>
-<div created="20150326225144630" list="" modified="20150328150048679" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/hidefromlist">
-<pre>{{!!list}}</pre>
 </div>
 <div created="20150319215303668" creator="le-pako" list="Start sticky Features direct_link $:/core/ui/Buttons/new-tiddler" modified="20150411173719386" modifier="le-pako" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/list">
 <pre>{{!!list}}</pre>
@@ -6031,7 +6195,7 @@ Configure your top menu bar.
 &lt;$checkbox field=&quot;text&quot; checked=&quot;show&quot; unchecked=&quot;hide&quot; tiddler=&quot;$:/plugins/lepako/tidplus/topmenu/settings/icons&quot; /&gt; Show Icons 
 </pre>
 </div>
-<div caption="Order Items" created="20150330191150310" creator="le-pako" modified="20150413093948760" modifier="le-pako" tags="$:/plugins/lepako/tidplus/topmenu/settings [[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
+<div caption="Order Items" created="20150330191150310" creator="le-pako" modified="20150413222858817" modifier="le-pako" tags="$:/plugins/lepako/tidplus/topmenu/settings [[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/order">
 <pre>\define addConfig(var) $:/config/TopMenu/Visibility/$var$
 
 &lt;$link to=&quot;$:/plugins/lepako/tidplus/topmenu/settings/order&quot; class=&quot;right&quot;&gt;Edit this tiddler &lt;/$link&gt;
@@ -6040,22 +6204,23 @@ Configure your top menu bar.
 Order the menu items
 
 &lt;table&gt;
-&lt;tr&gt;&lt;th&gt;''Tiddler''&lt;/th&gt;&lt;th&gt;Display this field in the Menu&lt;br&gt;(default: text)&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;''Tiddler''&lt;/th&gt;&lt;th&gt;Display this field in the Menu&lt;br&gt;(default: title)&lt;/th&gt;&lt;/tr&gt;
 &lt;$list filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]]&quot; variable=&quot;listItem&quot;&gt;
 &lt;tr&gt;&lt;td&gt;&lt;i class=&quot;fa fa-chevron-down&quot; /&gt;&lt;i class=&quot;fa fa-chevron-up&quot; /&gt; &lt;$link to=&lt;&lt;listItem&gt;&gt;&gt;&lt;$view tiddler=&lt;&lt;listItem&gt;&gt; field='title' /&gt;&lt;/$link&gt;&lt;/td&gt;
 &lt;td&gt;
 &lt;$radio tiddler=&lt;&lt;addConfig $(listItem)$&gt;&gt; field=&quot;text&quot; value=&quot;title&quot;&gt;
 Caption (or Title)&lt;/$radio&gt;
 &lt;$radio tiddler=&lt;&lt;addConfig $(listItem)$&gt;&gt; field=&quot;text&quot; value=&quot;text&quot;&gt;
-Text (Contents)&lt;/$radio&gt;
-&lt;$radio tiddler=&lt;&lt;addConfig $(listItem)$&gt;&gt; field=&quot;text&quot; value=&quot;icon&quot;&gt;
-Icon only (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &gt;Add an icon&lt;/$transclude&gt;)
-&lt;/$radio&gt;
+Text &lt;/$radio&gt;
+&lt;$list filter=&quot;[&lt;listItem&gt;has[icon]]&quot; variable=&quot;listItem&quot; emptyMessage=&quot;&lt;$button message='tm-edit-tiddler' param=&lt;&lt;listItem&gt;&gt; class='tc-btn-invisible' &gt;&lt;i class='fa fa-plus' /&gt; Add icon&lt;/$button&gt;
+&quot; &gt;&lt;$radio tiddler=&lt;&lt;addConfig $(listItem)$&gt;&gt; field=&quot;text&quot; value=&quot;icon&quot;&gt;
+Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &gt;Add an icon&lt;/$transclude&gt;)
+&lt;/$radio&gt;&lt;/$list&gt;
 &lt;/td&gt;&lt;/tr&gt;
 &lt;/$list&gt;
 &lt;/table&gt;
 
-&lt;$button class=&quot;red&quot;&gt;
+&lt;$button class=&quot;red fullwidth&quot;&gt;
 &lt;$action-deletetiddler $filter=&quot;[all[]prefix[$:/config/TopMenu/Visibility/]]&quot;  /&gt;
 {{$:/core/images/delete-button}} Reset configuration
 &lt;/$button&gt; 
@@ -6068,10 +6233,10 @@ Icon only (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quo
 &lt;i class=&quot;fa fa-chevron-down&quot; /&gt; Item 3 &lt;i class=&quot;fa fa-chevron-up&quot; /&gt;
 </pre>
 </div>
-<div created="20150329103239108" modified="20150411182352827" modifier="le-pako" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/scrollbuttons">
+<div created="20150329103239108" modified="20150413220803927" modifier="le-pako" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/settings/scrollbuttons">
 <pre>hide</pre>
 </div>
-<div created="20150312214814880" creator="le-pako" modified="20150411170112721" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
+<div created="20150312214814880" creator="le-pako" modified="20150413221209954" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet" title="$:/plugins/lepako/tidplus/topmenu/stylesheet">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 tc-story-river { top:40px;}
@@ -6088,11 +6253,17 @@ left: 0px;
 border-bottom: 1px solid  &lt;&lt;color tab-border &gt;&gt; ;
 /*width: {{$:/themes/tiddlywiki/vanilla/metrics/storyright}}; */
 width: 100%;
+/*height: 40px;
+*/
 }
 
 .tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea
 .tidplus-topbar{
 width: auto;
+}
+.tc-control-panel label.tc-radio{
+padding:10px 5px 10px 5px;
+
 }
 
 .tidplus-nav{
@@ -6101,27 +6272,33 @@ float:left;
 color: &lt;&lt;color sidebar-tiddler-link-foreground &gt;&gt;;
 }
 
+button.tidplus-nopad-left {padding-left: 0px;}
+button.tidplus-nopad-right {padding-right: 0px; }
+
 .tidplus-nav btn{
 padding: 8px}
 
+.tidplus-topbar{
+height: 40px;
+font-size: 1.1em;
+}
+
 div.tw5-topmenu  {
-left: 0px;
 width: {{$:/themes/tiddlywiki/vanilla/metrics/storywidth}};
 height: 40px;
 padding: 0.6em 42px 0 42px;
-background-color: &lt;&lt;color alert-background&gt;&gt;;
-font-size: 1.2em;
+font-size: 1.1em;
 }
 
 &lt;/pre&gt;</pre>
 </div>
-<div created="20150318223918381" creator="le-pako" modified="20150413091339736" modifier="le-pako" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/template/menuitem">
+<div created="20150318223918381" creator="le-pako" modified="20150413191827311" modifier="le-pako" tags="[[Test menu gauche]]" title="$:/plugins/lepako/tidplus/topmenu/template/menuitem">
 <pre>\define configTiddler() $:/config/TopMenu/Visibility/$(currentTiddler)$
 \define settingsTiddler() $:/plugins/lepako/tidplus/topmenu/settings/icons
 
 \define hasChildren()
-&lt;$button popup=&lt;&lt;qualify &quot;$:/state/topmenu&quot; &gt;&gt; class=&quot;tc-btn-invisible tc-btn-dropdown&quot; tooltip=&quot;&quot; &gt;
-&lt;&lt;fillButton&gt;&gt;
+&lt;&lt;noChildren&gt;&gt;
+&lt;$button popup=&lt;&lt;qualify &quot;$:/state/topmenu&quot; &gt;&gt; class=&quot;tc-btn-invisible tc-btn-dropdown tidplus-nopad-left&quot; tooltip=&quot;&quot; &gt;
 {{$:/core/images/down-arrow}}
 &lt;/$button&gt;
 &lt;div class=&quot;tc-block-dropdown-wrapper&quot;&gt;
@@ -6139,14 +6316,12 @@ font-size: 1.2em;
 
 \define noChildren()
 &lt;$reveal state=&lt;&lt;qualify $(currentTiddler)$ &gt;&gt; type=&quot;match&quot; text=&quot;&quot; default=&quot;&quot;&gt;
-&lt;$list filter=&quot;[&lt;configTiddler&gt;search:text[text]]&quot; variable=&quot;listItem&quot; &gt;
+&lt;$list filter=&quot;[&lt;configTiddler&gt;search:text[text]]&quot; variable=&quot;listItem&quot; emptyMessage=&quot;&lt;$button class='tc-btn-invisible tidplus-nopad-right'&gt;
+&lt;$action-navigate $to={{!!title}} /&gt;&lt;&lt;fillButton&gt;&gt;
+&lt;/$button&gt; &quot; &gt;
 &lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=&quot;text&quot; mode=&quot;inline&quot; /&gt;
 &lt;/$list&gt;
 
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
-&lt;$action-navigate $to={{!!title}} /&gt;
-&lt;&lt;fillButton&gt;&gt;
-&lt;/$button&gt;
 &lt;/$reveal&gt;
 \end
 
@@ -6219,14 +6394,17 @@ font-size: 1.2em;
 <div modified="20150411134057444" modifier="le-pako" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div modified="20150413113405132" modifier="le-pako" title="$:/state/sidebar">
-<pre>no</pre>
+<div modified="20150413222952836" modifier="le-pako" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
 <div modified="20150412171342371" modifier="le-pako" title="$:/state/tab--1095126628">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
-<div modified="20150413113232321" modifier="le-pako" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/System</pre>
+<div modified="20150413185329664" modifier="le-pako" title="$:/state/tab--1255653655">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
+</div>
+<div modified="20150413223941582" modifier="le-pako" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div modified="20150412150050700" modifier="le-pako" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
@@ -6234,37 +6412,52 @@ font-size: 1.2em;
 <div modified="20150411170429784" modifier="le-pako" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
+<div modified="20150413224150295" modifier="le-pako" title="$:/state/tab--627047625">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
+</div>
 <div modified="20150411165413848" modifier="le-pako" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
 <div modified="20150412150118029" modifier="le-pako" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div modified="20150413091133293" modifier="le-pako" title="$:/state/tab-1486726048">
+<div modified="20150413220949068" modifier="le-pako" title="$:/state/tab-1486726048">
 <pre>$:/plugins/lepako/tidplus/topmenu/settings/order</pre>
 </div>
-<div modified="20150412150247498" modifier="le-pako" title="$:/state/tab-1749438307">
+<div modified="20150413184214028" modifier="le-pako" title="$:/state/tab-1749438307">
 <pre>$:/plugins/lepako/tidplus/topmenu/settings</pre>
 </div>
 <div modified="20150412155001910" modifier="le-pako" title="$:/state/tab-449600683">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
-<div modified="20150413113305899" modifier="le-pako" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div modified="20150413192846763" modifier="le-pako" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div modified="20150412150043256" modifier="le-pako" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
-<div modified="20150413151039664" modifier="le-pako" title="$:/state/toc/A faire-Side Menus--1317564193">
+<div modified="20150413183006121" modifier="le-pako" title="$:/state/toc/A faire-Faire un formulaire d'entree de donnees--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150411165841527" modifier="le-pako" title="$:/state/toc/Side Menus-Top horizontal Menu--1317564193">
+<div modified="20150413184938022" modifier="le-pako" title="$:/state/toc/A faire-Side Menus--1317564193">
 <pre>open</pre>
 </div>
-<div modified="20150413151037781" modifier="le-pako" title="$:/state/toc/Start-A faire--1317564193">
+<div modified="20150413224904641" modifier="le-pako" title="$:/state/toc/Side Menus-Footer Menu Bar--1317564193">
 <pre>open</pre>
+</div>
+<div modified="20150413224906341" modifier="le-pako" title="$:/state/toc/Side Menus-Top horizontal Menu--1317564193">
+<pre>open</pre>
+</div>
+<div modified="20150413224727206" modifier="le-pako" title="$:/state/toc/Start-A faire--1317564193">
+<pre>open</pre>
+</div>
+<div modified="20150413184611564" modifier="le-pako" title="$:/state/toc/Start-Features--1317564193">
+<pre>close</pre>
 </div>
 <div modified="20150413151036581" modifier="le-pako" title="$:/state/toc/Start-Tests--1317564193">
+<pre>close</pre>
+</div>
+<div modified="20150413182530615" modifier="le-pako" title="$:/state/toc/Test menu gauche-$:/plugins/lepako/tidplus/topmenu/settings--1317564193">
 <pre>close</pre>
 </div>
 <div modified="20150413112408123" modifier="le-pako" title="$:/state/toc/Tests-Order a list--1317564193">
@@ -6276,11 +6469,14 @@ font-size: 1.2em;
 <div created="20150407075128306" creator="l" modified="20150407075132104" modifier="lepako" title="$:/status/UserName">
 <pre>le-pako</pre>
 </div>
-<div list="$:/AdvancedSearch Start [[backup $:/plugins/lepako/tidplus/topmenu]] test [[3-control with taglist and temp file]] Roadblocks" title="$:/StoryList">
+<div list="Start $:/plugins/lepako/tidplus/topmenu $:/plugins/lepako/tidplus/footbar/stylesheet $:/AdvancedSearch" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20150411134227134" creator="le-pako" modified="20150413113240763" modifier="le-pako" title="$:/temp/advancedsearch">
-<pre>$:/tem</pre>
+<div caption="Stylesheets" created="20150413184110875" creator="le-pako" icon="&lt;i class=&quot;fa fa-file-text-o&quot; /&gt;" modified="20150413184202385" modifier="le-pako" tags="$:/custom/topmenu" title="$:/tags/Stylesheet">
+<pre></pre>
+</div>
+<div created="20150411134227134" creator="le-pako" modified="20150413224249696" modifier="le-pako" title="$:/temp/advancedsearch">
+<pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -6296,7 +6492,7 @@ font-size: 1.2em;
     }
 }</pre>
 </div>
-<div created="20150411170800012" creator="le-pako" modified="20150413113348224" modifier="le-pako" title="$:/temp/NewTagName">
+<div created="20150411170800012" creator="le-pako" modified="20150413224852370" modifier="le-pako" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20150413113250331" creator="le-pako" modified="20150413113352570" modifier="le-pako" tags="Tests" title="$:/temp/topmenu">
@@ -6983,15 +7179,6 @@ next: (&lt;&lt;nextItem&gt;&gt;)
 &lt;span class=&quot;tidplus-nav&quot;&gt;&lt;button class=&quot;tc-btn-invisible&quot; &gt;{{$:/core/images/right-arrow}}&lt;/button&gt;&lt;/span&gt;
 &lt;/$scrollable&gt;</pre>
 </div>
-<div created="20150331215216412" modified="20150401180439401" tags="sticky $:/tags/PageTemplate" title="bottom menu">
-<pre>!Menu</pre>
-</div>
-<div created="20150412151853564" creator="le-pako" modified="20150412171217903" modifier="le-pako" tags="$:/custom/topmenu" title="button-link">
-<pre>&lt;$button message=&quot;tm-new-tiddler&quot; tooltip={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} class=&quot;tc-btn-invisible red&quot; &gt;
-{{$:/core/images/new-button}} Add a tiddler
-&lt;/$button&gt;
-</pre>
-</div>
 <div created="20150319200547666" modified="20150329234524996" tags="[[Test menu gauche]]" title="button/left" type="text/vnd.tiddlywiki">
 <pre>&lt;$set name=&quot;refreshList&quot; 
 filter=&quot;[tag[$:/custom/topmenu]!has[draft.of]&quot; 
@@ -7131,7 +7318,7 @@ background: none;
 * for selected tiddlers, be able to edit fields and tags
 * for selected tiddlers, assign a [[tidType]] </pre>
 </div>
-<div created="20150216202533700" creator="ID-man" modified="20150312215754756" modifier="ID-man" tags="$:/tags/Stylesheet sticky Features" title="Custom stylesheet" type="text/css">
+<div created="20150216202533700" creator="ID-man" modified="20150413223818115" modifier="le-pako" tags="$:/tags/Stylesheet sticky Features" title="Custom stylesheet" type="text/css">
 <pre>.tc-tiddler-body h2 {
 border-bottom: 2px solid #bbb;
 
@@ -7145,13 +7332,12 @@ padding-top: 10px;
 background-color: #FFF;
 }
 .green { color: #27772F}
-
-.red { color: red; }
-
-.orange { color: #e99010; }
+.orange { color: #E99010; }
+.red { color: #CB3131; }
+.white { color: #FFFFFF }
 .disabled { color: #C0C0C0}
 
-.white { color: #FFFFFF }
+.fullwidth { width: 100%;}
 
 .bando {
 width: 100%;
@@ -7271,16 +7457,22 @@ The following
 * add a tag bar to the ~ViewTemplate to suggest additional tags based on currently assigned tags
 * customize the ~ViewTemplate based on assigned tags</pre>
 </div>
-<div caption="Formulaire entrees donnees" created="20150311194844054" modified="20150315162610786" tags="[[A faire]]" title="Faire un formulaire d'entree de donnees">
+<div caption="Formulaire entree donnees" created="20150311194844054" creator="le-pako" modified="20150413183050096" modifier="le-pako" tags="[[A faire]]" title="Faire un formulaire d'entree de donnees">
 <pre>* Un tiddler pour chaque champs de donnees?
 * Un tidder avec differents champs?
 </pre>
 </div>
-<div created="20150307113903523" modified="20150323223712566" tags="Start $:/custom/topmenu" title="Features">
+<div created="20150307113903523" creator="le-pako" modified="20150413184640336" modifier="le-pako" tags="Start" title="Features">
 <pre>Currently implemented
 &lt;&lt;toc &quot;Features&quot; &gt;&gt;</pre>
 </div>
 <div created="20150329124549947" modified="20150329124604949" tags="[[A faire]]" title="Field Manager">
+<pre></pre>
+</div>
+<div created="20150331215216412" creator="le-pako" modified="20150413230512857" modifier="le-pako" tags="sticky $:/tags/PageTemplate" title="footBar">
+<pre>&lt;div class=&quot;tidplus-footbar&quot; &gt;&lt;h2&gt;Footer Menu Bar&lt;/h2&gt;&lt;/div&gt;</pre>
+</div>
+<div created="20150413224801026" creator="le-pako" modified="20150413224819936" modifier="le-pako" tags="[[Side Menus]]" title="Footer Menu Bar">
 <pre></pre>
 </div>
 <div created="20150331213357348" modified="20150331213419039" tags="Bookmark" title="http://tw5custom.tiddlyspot.com/">
@@ -7482,7 +7674,7 @@ Type of document
 &lt;$checkbox tag=&quot;ManagedServices&quot;  tiddler=&quot;&quot; default=&quot;&quot; field=&quot;&quot; &gt; Managed services ?&lt;/$checkbox&gt;
 </pre>
 </div>
-<div created="20150409201742087" creator="le-pako" modified="20150411114249281" modifier="le-pako" tags="Tests" title="Roadblocks">
+<div created="20150409201742087" creator="le-pako" modified="20150413151957916" modifier="le-pako" tags="Tests" title="Roadblocks">
 <pre> `&lt;$action-setfield&gt;` requires the ''unbracketed'' tiddler name for its `field` attribute. This attribute doesn't evaluate the variable.
 
 `list-before` only takes ''unbracketed'' tiddler names 
@@ -7495,6 +7687,8 @@ Type of document
 `&lt;$set&gt;` assigns the filter result as ''bracketed'' tiddler names
 
 ''filters'': don't enable to get the list of //tiddlers up to the currentTiddler//
+
+Using a temporary tiddler doesn't work as variables can't be stored in tiddlers without a button push
 
 
 
@@ -7545,7 +7739,7 @@ List: {{!!list}}
 <div created="20150312214237539" modified="20150312214401398" tags="[[Top horizontal Menu]]" title="test menu droite">
 <pre>---------------------------Texte a droite ------------------------------------------------------</pre>
 </div>
-<div created="20150312213919178" creator="le-pako" modified="20150412180549211" modifier="le-pako" tags="[[Top horizontal Menu]]" title="Test menu gauche" type="text/vnd.tiddlywiki">
+<div created="20150312213919178" creator="le-pako" modified="20150413185010095" modifier="le-pako" tags="[[Top horizontal Menu]] $:/custom/topmenu" title="Test menu gauche" type="text/vnd.tiddlywiki">
 <pre>Adds a top header bar with a list of links.
 
 !!!How to use it
