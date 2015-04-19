@@ -6497,7 +6497,7 @@ emptyMessage=&quot;&lt;$button class='tc-btn-invisible tidplus-nopad-right'&gt;
 
 </pre>
 </div>
-<div created="20150314130644899" creator="le-pako" modified="20150418164538998" modifier="le-pako" tags="[[Test menu gauche]] [[Header Bar]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/headerbar" type="text/vnd.tiddlywiki">
+<div created="20150314130644899" creator="le-pako" modified="20150419125517310" modifier="le-pako" tags="[[Test menu gauche]] [[Header Bar]] $:/tags/TopLeftBar" title="$:/plugins/lepako/tidplus/headerbar" type="text/vnd.tiddlywiki">
 <pre>\define _list() $:/plugins/lepako/tidplus/topmenu/list
 \define menuTag() $:/custom/HeaderMenu
 
@@ -6515,11 +6515,18 @@ emptyMessage=&quot;&lt;$button class='tc-btn-invisible tidplus-nopad-right'&gt;
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20150312214814880" creator="le-pako" modified="20150418164648006" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/stylesheet">
+<div created="20150312214814880" creator="le-pako" modified="20150419125633699" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/stylesheet">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
-tc-story-river { top:40px;}
-.tc-block-dropdown {margin-top: 0px;}
+tc-story-river { top:40px; }
+
+.tc-block-dropdown {
+margin-top: 0px;
+z-index: 2000;
+}
+
+.tidplus-header-nav .tc-block-dropdown-wrapper{
+position: absolute;}
 
 .tc-topbar {
 top: 0px;
@@ -6537,12 +6544,16 @@ width: 100%;
 }
 
 .tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea
-.tidplus-topbar{
-width: auto;
-}
-.tc-control-panel label.tc-radio{
-padding:10px 5px 10px 5px;
+.tidplus-topbar{ width: auto;}
 
+.tc-control-panel label.tc-radio{ padding: 10px 5px 10px 5px; }
+
+.tidplus-header-bar{
+height: 40px;
+width: 500px;
+font-size: 1.1em;
+overflow-x: scroll; 
+overflow-y: hidden;
 }
 
 .tidplus-header-nav{
@@ -6554,13 +6565,9 @@ color: &lt;&lt;color sidebar-tiddler-link-foreground &gt;&gt;;
 button.tidplus-nopad-left {padding-left: 0px;}
 button.tidplus-nopad-right {padding-right: 0px; }
 
-.tidplus-nav btn{
-padding: 8px}
-
-.tidplus-header-bar{
-height: 40px;
-font-size: 1.1em;
+.tidplus-header-nav button{ 
 }
+
 
 div.tw5-topmenu  {
 width: {{$:/themes/tiddlywiki/vanilla/metrics/storywidth}};
@@ -6571,7 +6578,7 @@ font-size: 1.1em;
 
 &lt;/pre&gt;</pre>
 </div>
-<div created="20150318223918381" creator="le-pako" modified="20150418165837701" modifier="le-pako" tags="[[Test menu gauche]] [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/template/nav">
+<div created="20150318223918381" creator="le-pako" modified="20150419131241639" modifier="le-pako" tags="[[Test menu gauche]] [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/template/nav">
 <pre>\define configTiddler() $:/config/HeaderMenu/Visibility/$(currentTiddler)$
 \define settingsTiddler() $:/plugins/lepako/tidplus/settings/headerbar/icons
 
@@ -6594,14 +6601,11 @@ font-size: 1.1em;
 \end
 
 \define noChildren(btn-class)
-&lt;$reveal state=&lt;&lt;qualify $(currentTiddler)$ &gt;&gt; type=&quot;match&quot; text=&quot;&quot; default=&quot;&quot;&gt;
 &lt;$list filter=&quot;[&lt;configTiddler&gt;search:text[text]]&quot; variable=&quot;listItem&quot; emptyMessage=&quot;&lt;$button class='tc-btn-invisible $btn-class$'&gt;
 &lt;$action-navigate $to={{!!title}} /&gt;&lt;&lt;fillButton&gt;&gt;
 &lt;/$button&gt; &quot; &gt;
 &lt;$transclude tiddler=&lt;&lt;currentTiddler&gt;&gt; field=&quot;text&quot; mode=&quot;inline&quot; /&gt;
 &lt;/$list&gt;
-
-&lt;/$reveal&gt;
 \end
 
 \define fillButton()
@@ -6822,17 +6826,17 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div created="20150307112007728" modified="20150331000145379" title="$:/SiteTitle">
 <pre>{{$:/favicon.ico}} ~TidLab</pre>
 </div>
-<div modified="20150418141059262" modifier="le-pako" title="$:/state/showeditpreview">
-<pre>yes</pre>
+<div modified="20150419115721101" modifier="le-pako" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
-<div modified="20150418143341314" modifier="le-pako" title="$:/state/sidebar">
+<div modified="20150419115651827" modifier="le-pako" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div modified="20150418111211760" modifier="le-pako" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
-<div modified="20150418091732406" modifier="le-pako" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div modified="20150419105951544" modifier="le-pako" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Theme</pre>
 </div>
 <div modified="20150418131651094" modifier="le-pako" title="$:/state/tab--88751442">
 <pre>$:/plugins/lepako/tidplus/settings/footerbar/main</pre>
@@ -6843,8 +6847,8 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div modified="20150418092005316" modifier="le-pako" title="$:/state/tab-1486726048">
 <pre>$:/plugins/lepako/tidplus/topmenu/settings/order</pre>
 </div>
-<div modified="20150418131653684" modifier="le-pako" title="$:/state/tab-1749438307">
-<pre>$:/plugins/lepako/tidplus/settings/headerbar</pre>
+<div modified="20150419105834989" modifier="le-pako" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div modified="20150418131646226" modifier="le-pako" title="$:/state/tab-1851589372">
 <pre>$:/plugins/lepako/tidplus/settings/headerbar/main</pre>
@@ -6867,7 +6871,7 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div modified="20150418162705352" modifier="le-pako" title="$:/state/toc/Side Menus-Top horizontal Menu--1317564193">
 <pre>close</pre>
 </div>
-<div modified="20150418164543403" modifier="le-pako" title="$:/state/toc/Start-A faire--1317564193">
+<div modified="20150419115529457" modifier="le-pako" title="$:/state/toc/Start-A faire--1317564193">
 <pre>open</pre>
 </div>
 <div modified="20150418095753085" modifier="le-pako" title="$:/state/toc/Test menu gauche-$:/plugins/lepako/tidplus/topmenu/settings--1317564193">
@@ -6879,7 +6883,7 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div created="20150407075128306" creator="l" modified="20150407075132104" modifier="lepako" title="$:/status/UserName">
 <pre>le-pako</pre>
 </div>
-<div list="Start $:/plugins/lepako/tidplus/headerbar/template/nav $:/plugins/lepako/tidplus/headerbar $:/plugins/lepako/tidplus/headerbar/stylesheet" title="$:/StoryList">
+<div list="Start $:/plugins/lepako/tidplus/headerbar/stylesheet $:/plugins/lepako/tidplus/headerbar $:/plugins/lepako/tidplus/headerbar/template/nav" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="Stylesheets" created="20150413184110875" creator="le-pako" icon="&lt;i class=&quot;fa fa-file-text-o orange&quot; /&gt;" modified="20150418111233842" modifier="le-pako" tags="$:/custom/HeaderMenu" title="$:/tags/Stylesheet">
@@ -7127,7 +7131,7 @@ At this point it is largely for experimentation by @zooko.
 <div created="20150418092119217" creator="le-pako" modified="20150418092119217" modifier="le-pako" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/http://tiddlywiki.com/library/v5.1.8/index.html" url="http://tiddlywiki.com/library/v5.1.8/index.html">
 <pre>loaded</pre>
 </div>
-<div modified="20150414182553104" modifier="le-pako" title="$:/theme">
+<div modified="20150419110051098" modifier="le-pako" title="$:/theme">
 <pre>$:/themes/tiddlywiki/vanilla</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.8">
@@ -7947,19 +7951,17 @@ background: none;
 * for selected tiddlers, be able to edit fields and tags
 * for selected tiddlers, assign a [[tidType]] </pre>
 </div>
-<div created="20150216202533700" creator="ID-man" modified="20150413223818115" modifier="le-pako" tags="$:/tags/Stylesheet sticky Features" title="Custom stylesheet" type="text/css">
+<div created="20150216202533700" creator="ID-man" modified="20150419111349748" modifier="le-pako" tags="$:/tags/Stylesheet sticky Features" title="Custom stylesheet" type="text/css">
 <pre>.tc-tiddler-body h2 {
 border-bottom: 2px solid #bbb;
+}
 
-}
-..tc-tiddler-body {
-background-color: red;
-}
 .tc-tiddler-frame {
 padding-bottom: 10px;
 padding-top: 10px;
 background-color: #FFF;
 }
+
 .green { color: #27772F}
 .orange { color: #E99010; }
 .red { color: #CB3131; }
@@ -7978,9 +7980,6 @@ float:right;
 margin-right: 5px;
 }
 
-.top-bar {
-background-color:#EEE;
-}
 hr {color:#EEE;}
 
 .tc-tagged-country {
