@@ -6515,7 +6515,7 @@ emptyMessage=&quot;&lt;$button class='tc-btn-invisible tidplus-nopad-right'&gt;
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20150312214814880" creator="le-pako" modified="20150419125633699" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/stylesheet">
+<div created="20150312214814880" creator="le-pako" modified="20150420215545700" modifier="le-pako" tags="[[Test menu gauche]] $:/tags/Stylesheet [[Header Bar]]" title="$:/plugins/lepako/tidplus/headerbar/stylesheet">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 &lt;pre&gt;
 tc-story-river { top:40px; }
@@ -6550,15 +6550,17 @@ width: 100%;
 
 .tidplus-header-bar{
 height: 40px;
-width: 500px;
+width: auto;
 font-size: 1.1em;
 overflow-x: scroll; 
 overflow-y: hidden;
+white-space: nowrap;
 }
 
 .tidplus-header-nav{
 margin: 0 0px 0 0px;
-float:left;
+/* float:left; */
+display: inline-block;
 color: &lt;&lt;color sidebar-tiddler-link-foreground &gt;&gt;;
 }
 
@@ -6856,8 +6858,8 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div modified="20150418102020701" modifier="le-pako" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div modified="20150418141308808" modifier="le-pako" title="$:/state/toc/A faire-Side Menus--1317564193">
-<pre>open</pre>
+<div modified="20150420213937733" modifier="le-pako" title="$:/state/toc/A faire-Side Menus--1317564193">
+<pre>close</pre>
 </div>
 <div modified="20150418143417432" modifier="le-pako" title="$:/state/toc/Header Bar-$:/plugins/lepako/tidplus/settings/headerbar--1317564193">
 <pre>close</pre>
@@ -6883,7 +6885,7 @@ Icon (&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;icon&quot; &g
 <div created="20150407075128306" creator="l" modified="20150407075132104" modifier="lepako" title="$:/status/UserName">
 <pre>le-pako</pre>
 </div>
-<div list="Start $:/plugins/lepako/tidplus/headerbar/stylesheet $:/plugins/lepako/tidplus/headerbar $:/plugins/lepako/tidplus/headerbar/template/nav" title="$:/StoryList">
+<div list="$:/plugins/lepako/tidplus/headerbar/stylesheet Start" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="Stylesheets" created="20150413184110875" creator="le-pako" icon="&lt;i class=&quot;fa fa-file-text-o orange&quot; /&gt;" modified="20150418111233842" modifier="le-pako" tags="$:/custom/HeaderMenu" title="$:/tags/Stylesheet">
