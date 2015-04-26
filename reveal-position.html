@@ -5652,8 +5652,8 @@ Stylesheet</pre>
 <div modified="20150426154430195" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div modified="20150426155538398" title="$:/state/sidebar">
-<pre>yes</pre>
+<div modified="20150426163607339" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div modified="20150426161619785" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
@@ -5775,22 +5775,23 @@ Stylesheet</pre>
     }
 }</pre>
 </div>
-<div created="20150426154433602" modified="20150426161243249" title="Example">
+<div created="20150426154433602" modified="20150426165209671" title="Example">
 <pre>The grey bar below is a scrollable containing several divs and a button that reveals a &quot;Hello there&quot; text that should appear right below it.
 However the text position is not updated when the bar is scrolled to the left.
 
 &lt;$scrollable class=&quot;scroll&quot;&gt;
 &lt;div&gt;Sample text&lt;/div&gt;
 &lt;div&gt;Sample text&lt;/div&gt;
-&lt;$button popup=&lt;&lt;qualify &quot;Example&quot;&gt;&gt; &gt;
+&lt;div&gt;&lt;$button popup=&lt;&lt;qualify &quot;Example&quot;&gt;&gt; &gt;
 {{$:/core/images/down-arrow}}
-&lt;/$button&gt;
-&lt;div&gt;Sample text&lt;/div&gt;
-
-
-&lt;$reveal type=&quot;popup&quot; position=&quot;below&quot; state=&lt;&lt;qualify &quot;Example&quot;&gt;&gt; tag=&quot;span&quot;&gt;
+&lt;$reveal type=&quot;popup&quot; position=&quot;below&quot; class=&quot;popup&quot; state=&lt;&lt;qualify &quot;Example&quot;&gt;&gt; &gt;
 &lt;div&gt;Hello there!&lt;/div&gt;
 &lt;/$reveal&gt;
+&lt;/$button&gt;
+&lt;/div&gt;
+&lt;div&gt;Sample text&lt;/div&gt;
+&lt;div&gt;Sample text&lt;/div&gt;
+&lt;div&gt;Sample text&lt;/div&gt;
 &lt;/$scrollable&gt;</pre>
 </div>
 <div created="20150426154001459" modified="20150426161547925" tags="" title="GettingStarted">
@@ -5801,15 +5802,19 @@ But when in a scrollable, its position is not calculated properly.
 
 [[Example]]</pre>
 </div>
-<div created="20150426155540075" modified="20150426161752407" tags="$:/tags/Stylesheet" title="Stylesheet" type="text/css">
+<div created="20150426155540075" modified="20150426164254679" tags="$:/tags/Stylesheet" title="Stylesheet" type="text/css">
 <pre>.scroll{
-width: 200px;
-height: 40px;
+width: 300px;
+height: 34px;
 background-color: #f4f4f4;
 }
 .scroll div{
 display: inline-block;
 white-space: nowrap;
+}
+
+.popup{
+color: red;
 }</pre>
 </div>
 
